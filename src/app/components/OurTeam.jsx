@@ -8,6 +8,10 @@ import "./OurTeam.css";
 import MariamPhoto from "../../../assets/team/mariam.jpeg";
 import AsifPhoto from "../../../assets/team/asif.png";
 import KimPhoto from "../../../assets/team/kim.jpeg";
+import MohamedPhoto from "../../../assets/team/JEFF II.png";
+import AshishPhoto from "../../../assets/team/ASHISH.jpg.jpeg";
+import DavidPhoto from "../../../assets/team/DAVID.jpg.jpeg";
+
 
 const CEO = {
   name: "Shiine Yusuf",
@@ -20,10 +24,10 @@ const CEO = {
 const TEAM = [
   { name: "Asif Mansuri",    role: "Chief Operating Officer", company: "Comex Group",    photo: AsifPhoto },
   { name: "Kim Dongyoon",    role: "Chief Information Officer", company: "Comex Group",  photo: KimPhoto },
-  { name: "Ashish Bhadesia", role: "Chief Financial Officer",   company: "Comex Group",  initials: "AB" },
+  { name: "Ashish Bhadesia", role: "Chief Financial Officer",   company: "Comex Group",  photo: AshishPhoto },
   { name: "Vincent Onyango", role: "Internal Auditor",          company: "Comex Group",  initials: "VO" },
-  { name: "David Njuki",     role: "Project Manager",           company: "Comex Builders", initials: "DN" },
-  { name: "Mohamed Noor",    role: "General Manager",           company: "Comex Living", initials: "MN" },
+  { name: "David Njuki",     role: "Project Manager",           company: "Comex Builders", photo: DavidPhoto },
+  { name: "Mohamed Noor",    role: "General Manager",           company: "Comex Living", photo: MohamedPhoto },
   { name: "Mariam Mamuli",   role: "General Manager",           company: "Comex Homes",  photo: MariamPhoto },
 ];
 
@@ -84,7 +88,7 @@ export default function OurTeam() {
           <div className="team-roster-grid">
             {TEAM.map((member, i) => (
               <div className="roster-card" key={i} data-aos="fade-up" data-aos-delay={i * 60}>
-                <div className="r-avatar">
+                <div className={`r-avatar${member.photo ? " has-photo" : ""}`}>
                   {member.photo ? (
                     <Image
                       src={member.photo}
