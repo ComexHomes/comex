@@ -10,7 +10,7 @@ import AsifPhoto from "../../../assets/team/asif.png";
 import KimPhoto from "../../../assets/team/kim.jpeg";
 import MohamedPhoto from "../../../assets/team/JEFF II.png";
 import AshishPhoto from "../../../assets/team/ASHISH.jpg.jpeg";
-import DavidPhoto from "../../../assets/team/DAVID.jpg.jpeg";
+import DavidPhoto from "../../../assets/team/DAVID.jpeg";
 
 
 const CEO = {
