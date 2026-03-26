@@ -305,15 +305,19 @@
     letter-spacing: 0px;
     transform: none;
     opacity: 0.85;
+    white-space: normal;
+    max-width: 38vw;
+    margin: 0 auto;
+    line-height: 1.05;
+  }
+  .team-tag {
+    margin-top: 80px;
   }
   .team-tag,
   .team-h1,
   .team-sub {
     position: relative;
     z-index: 1;
-  }
-  .team-tag {
-    margin-top: 110px;
   }
   .team-roster-grid {
     grid-template-columns: 1fr;
