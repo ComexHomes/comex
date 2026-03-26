@@ -12,7 +12,6 @@ import MohamedPhoto from "../../../assets/team/JEFF II.png";
 import AshishPhoto from "../../../assets/team/ASHISH.jpg.jpeg";
 import DavidPhoto from "../../../assets/team/DAVID.jpeg";
 
-
 const CEO = {
   name: "Shiine Yusuf",
   title: "Comex Group — Chief Executive Officer",
@@ -22,19 +21,19 @@ const CEO = {
 };
 
 const TEAM = [
-  { name: "Asif Mansuri",    role: "Chief Operating Officer", company: "Comex Group",    photo: AsifPhoto },
-  { name: "Kim Dongyoon",    role: "Chief Investment Officer", company: "Comex Group",  photo: KimPhoto },
-  { name: "Ashish Bhadesia", role: "Chief Finance Officer",   company: "Comex Group",  photo: AshishPhoto },
-  { name: "Vincent Onyango", role: "Internal Auditor",          company: "Comex Group",  initials: "VO" },
+  { name: "Asif Mansuri",    role: "Chief Operating Officer",   company: "Comex Group",    photo: AsifPhoto },
+  { name: "Kim Dongyoon",    role: "Chief Investment Officer",  company: "Comex Group",    photo: KimPhoto },
+  { name: "Ashish Bhadesia", role: "Chief Finance Officer",     company: "Comex Group",    photo: AshishPhoto },
+  { name: "Vincent Onyango", role: "Internal Auditor",          company: "Comex Group",    initials: "VO" },
   { name: "David Njuki",     role: "Project Manager",           company: "Comex Builders", photo: DavidPhoto },
-  { name: "Mohamed Noor",    role: "General Manager",           company: "Comex Living", photo: MohamedPhoto },
-  { name: "Mariam Mamuli",   role: "General Manager",           company: "Comex Homes",  photo: MariamPhoto },
+  { name: "Mohamed Noor",    role: "General Manager",           company: "Comex Living",   photo: MohamedPhoto },
+  { name: "Mariam Mamuli",   role: "General Manager",           company: "Comex Homes",    photo: MariamPhoto },
 ];
 
 const STATS = [
-  { value: "4",     label: "Business Divisions" },
-  { value: "8",     label: "Senior Leaders" },
-  { value: "9–15%", label: "Guaranteed Returns" },
+  { value: "4",      label: "Business Divisions" },
+  { value: "8",      label: "Senior Leaders" },
+  { value: "9–15%",  label: "Guaranteed Returns" },
   { value: "1000+",  label: "Happy Investors" },
 ];
 
@@ -93,8 +92,8 @@ export default function OurTeam() {
                     <Image
                       src={member.photo}
                       alt={member.name}
-                      width={72}
-                      height={72}
+                      width={100}
+                      height={100}
                       style={{ objectFit: "cover", width: "100%", height: "100%" }}
                     />
                   ) : (
