@@ -297,7 +297,7 @@
   }
   .team-header::after {
     display: block;
-    font-size: 15vw;
+    font-size: 10vw;
     right: 0;
     left: 0;
     top: 0;
@@ -311,7 +311,7 @@
     line-height: 1.05;
   }
   .team-tag {
-    margin-top: 80px;
+    margin-top: 50px;
   }
   .team-tag,
   .team-h1,
