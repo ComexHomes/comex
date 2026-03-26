@@ -18,13 +18,13 @@ const CEO = {
   title: "Comex Group — Chief Executive Officer",
   initials: "SY",
   quote:
-    "Our mission is simple: put our clients' capital in the right place at the right time — and deliver returns that consistently beat the market.",
+    "We design and deliver spaces where investors achieve reliable returns and tenants experience quality, comfort, and a true sense of community—creating lasting value for all.",
 };
 
 const TEAM = [
   { name: "Asif Mansuri",    role: "Chief Operating Officer", company: "Comex Group",    photo: AsifPhoto },
-  { name: "Kim Dongyoon",    role: "Chief Information Officer", company: "Comex Group",  photo: KimPhoto },
-  { name: "Ashish Bhadesia", role: "Chief Financial Officer",   company: "Comex Group",  photo: AshishPhoto },
+  { name: "Kim Dongyoon",    role: "Chief Investment Officer", company: "Comex Group",  photo: KimPhoto },
+  { name: "Ashish Bhadesia", role: "Chief Finance Officer",   company: "Comex Group",  photo: AshishPhoto },
   { name: "Vincent Onyango", role: "Internal Auditor",          company: "Comex Group",  initials: "VO" },
   { name: "David Njuki",     role: "Project Manager",           company: "Comex Builders", photo: DavidPhoto },
   { name: "Mohamed Noor",    role: "General Manager",           company: "Comex Living", photo: MohamedPhoto },
@@ -35,7 +35,7 @@ const STATS = [
   { value: "4",     label: "Business Divisions" },
   { value: "8",     label: "Senior Leaders" },
   { value: "9–15%", label: "Guaranteed Returns" },
-  { value: "500+",  label: "Happy Investors" },
+  { value: "1000+",  label: "Happy Investors" },
 ];
 
 export default function OurTeam() {
@@ -57,8 +57,8 @@ export default function OurTeam() {
             Leadership <em>Across</em><br />Every Frontier
           </h1>
           <p className="team-sub">
-            A diverse team of seasoned professionals driving Comex Group&apos;s
-            vision across real estate development, living, and homes.
+            A dynamic collective of experienced professionals, driven by Comex Group&apos;s
+            vision to redefine real estate, elevate living standards, and create homes that inspire communities.
           </p>
         </div>
 

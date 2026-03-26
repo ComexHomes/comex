@@ -1,6 +1,6 @@
 .team-page {
   font-family: "Futura PT", sans-serif;
-  background: #fff;
+  background: #F2F0ED;
   color: #1a1a1a;
   min-height: 100vh;
   overflow-x: hidden;
@@ -18,7 +18,7 @@
   top: 40px;
   font-size: 9vw;
   font-weight: 700;
-  color: rgba(248, 164, 40, 0.16);
+  color: #F8A428;
   line-height: 1;
   pointer-events: none;
   user-select: none;
@@ -107,8 +107,8 @@
 /* CEO SPOTLIGHT */
 .team-ceo {
   margin: 0 64px 2px;
-  background: #FAFAFA;
-  border: 1px solid rgba(248, 164, 40, 0.22);
+  background: #E8E5E0;
+  border: 1px solid rgba(248, 164, 40, 0.35);
   padding: 56px 60px;
   display: grid;
   grid-template-columns: 160px 1fr;
@@ -191,7 +191,7 @@
   border: 1px solid rgba(248, 164, 40, 0.18);
 }
 .roster-card {
-  background: #FAFAFA;
+  background: #E8E5E0;
   padding: 36px 44px;
   display: flex;
   gap: 28px;
@@ -215,7 +215,7 @@
   height: 100%;
 }
 .roster-card:hover {
-  background: #F4F4F4;
+  background: #DEDAD4;
 }
 
 /* Avatar — larger for photo members */
