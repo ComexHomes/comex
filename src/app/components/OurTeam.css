@@ -14,7 +14,7 @@
 .team-header::after {
   content: 'OUR TEAM';
   position: absolute;
-  right: 15%;
+  right: 5%;
   top: 40px;
   font-size: 9vw;
   font-weight: 700;
@@ -284,6 +284,12 @@
   .team-roster-wrap {
     padding-left: 24px;
     padding-right: 24px;
+  }
+  .team-header::after {
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 14vw;
+    top: 30px;
   }
   .team-roster-grid {
     grid-template-columns: 1fr;
