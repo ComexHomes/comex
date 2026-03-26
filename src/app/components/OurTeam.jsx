@@ -13,6 +13,7 @@ import AshishPhoto from "../../../assets/team/ASHISH.jpg.jpeg";
 import DavidPhoto from "../../../assets/team/DAVID.jpeg";
 import VincentPhoto from "../../../assets/team/vincent.jpeg";
 import ShiinePhoto from "../../../assets/team/Shiine.jpeg";
+import KenPhoto from "../../../assets/team/KEN.png";
 
 const CEO = {
   name: "Shiine Yusuf",
@@ -30,6 +31,7 @@ const TEAM = [
   { name: "David Njuki",     role: "Project Manager",           company: "Comex Builders", photo: DavidPhoto },
   { name: "Mohamed Noor",    role: "General Manager",           company: "Comex Living",   photo: MohamedPhoto },
   { name: "Mariam Mamuli",   role: "General Manager",           company: "Comex Homes",    photo: MariamPhoto },
+  { name: "Kennedy Mugo",   role: "Head Of Marketing",           company: "Comex Group",    photo: KenPhoto },
 ];
 
 const STATS = [
