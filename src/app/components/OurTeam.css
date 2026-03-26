@@ -293,21 +293,27 @@
     padding-right: 24px;
   }
   .team-header {
-    padding-top: 120px;
+    padding-top: 40px;
   }
   .team-header::after {
-    right: 50%;
-    transform: translateX(50%);
-    font-size: 18vw;
-    top: 10px;
+    display: block;
+    font-size: 22vw;
+    right: 0;
+    left: 0;
+    top: 0;
+    text-align: center;
     letter-spacing: 0px;
-    z-index: 0;
+    transform: none;
+    opacity: 0.85;
   }
   .team-tag,
   .team-h1,
   .team-sub {
     position: relative;
     z-index: 1;
+  }
+  .team-tag {
+    margin-top: 110px;
   }
   .team-roster-grid {
     grid-template-columns: 1fr;
