@@ -96,8 +96,9 @@ function Contactus() {
 
         <div className="more-text">
           <p style={{ fontSize: "20px", color: "#fff" }}>
-            The Comex Homes does not share or exchange this information with
-            anyone. All information will be kept confidential.
+            Comex Homes respects your privacy. Your information will be kept confidential and will not be shared or exchanged with any third parties.
+            It will only be used to share relevant real estate updates, investment opportunities, and marketing information from Comex Homes.
+            All data is handled in accordance with the Kenya Data Protection Act, 2019.
           </p>
         </div>
       </div>
