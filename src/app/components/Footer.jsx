@@ -42,7 +42,7 @@ function Footer() {
       </div>
 
       <div className="bottom">
-        <p>Comex Homes &copy; 2023</p>
+        <p>Comex Homes &copy; {new Date().getFullYear()}</p>
       </div>
     </div>
   );

@@ -50,7 +50,7 @@ export default function Properties() {
       image: nyayoone,
       location: "Nairobi West",
       availablesuits: "Executive Studios and 1 Bedrooms",
-      link: "https://www.nyayoviewsuites.com/nyayoone",
+      link: "https://www.nyayoviewsuites.co.ke/nyayoone",
       units: "Sold Out",
     },
     {
@@ -59,7 +59,7 @@ export default function Properties() {
       image: nyayotwo,
       location: "Nairobi West",
       availablesuits: "Executive & Premium One Bedrooms",
-      link: "https://www.nyayoviewsuites.com/",
+      link: "https://www.nyayoviewsuites.co.ke/",
       units: "Sold Out",
     },
   ];

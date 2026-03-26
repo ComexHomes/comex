@@ -12,11 +12,12 @@ import MohamedPhoto from "../../../assets/team/JEFF II.png";
 import AshishPhoto from "../../../assets/team/ASHISH.jpg.jpeg";
 import DavidPhoto from "../../../assets/team/DAVID.jpeg";
 import VincentPhoto from "../../../assets/team/vincent.jpeg";
+import ShiinePhoto from "../../../assets/team/Shiine.jpeg";
 
 const CEO = {
   name: "Shiine Yusuf",
   title: "Comex Group — Chief Executive Officer",
-  initials: "SY",
+  photo: ShiinePhoto,
   quote:
     "We design and deliver spaces where investors achieve reliable returns and tenants experience quality, comfort, and a true sense of community—creating lasting value for all.",
 };
@@ -74,7 +75,19 @@ export default function OurTeam() {
 
         {/* CEO SPOTLIGHT */}
         <div className="team-ceo" data-aos="fade-up">
-          <div className="ceo-avatar-wrap">{CEO.initials}</div>
+          <div className="ceo-avatar-wrap">
+            {CEO.photo ? (
+              <Image
+                src={CEO.photo}
+                alt={CEO.name}
+                width={160}
+                height={160}
+                style={{ objectFit: "cover", width: "100%", height: "100%", objectPosition: "center top" }}
+              />
+            ) : (
+              CEO.initials
+            )}
+          </div>
           <div>
             <div className="ceo-name">{CEO.name}</div>
             <div className="ceo-title">{CEO.title}</div>
