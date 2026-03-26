@@ -11,6 +11,7 @@ import KimPhoto from "../../../assets/team/kim.jpeg";
 import MohamedPhoto from "../../../assets/team/JEFF II.png";
 import AshishPhoto from "../../../assets/team/ASHISH.jpg.jpeg";
 import DavidPhoto from "../../../assets/team/DAVID.jpeg";
+import VincentPhoto from "../../../assets/team/vincent.jpeg";
 
 const CEO = {
   name: "Shiine Yusuf",
@@ -24,7 +25,7 @@ const TEAM = [
   { name: "Asif Mansuri",    role: "Chief Operating Officer",   company: "Comex Group",    photo: AsifPhoto },
   { name: "Kim Dongyoon",    role: "Chief Investment Officer",  company: "Comex Group",    photo: KimPhoto },
   { name: "Ashish Bhadesia", role: "Chief Finance Officer",     company: "Comex Group",    photo: AshishPhoto },
-  { name: "CPA(K) Vincent Onyango", role: "Internal Auditor",          company: "Comex Group",    initials: "VO" },
+  { name: "CPA(K) Vincent Onyango", role: "Internal Auditor",          company: "Comex Group",    photo: VincentPhoto },
   { name: "David Njuki",     role: "Project Manager",           company: "Comex Builders", photo: DavidPhoto },
   { name: "Mohamed Noor",    role: "General Manager",           company: "Comex Living",   photo: MohamedPhoto },
   { name: "Mariam Mamuli",   role: "General Manager",           company: "Comex Homes",    photo: MariamPhoto },
