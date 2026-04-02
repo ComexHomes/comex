@@ -28,7 +28,7 @@ const TEAM = [
   { name: "Kim Dongyoon",    role: "Chief Investment Officer",  company: "Comex Group",    photo: KimPhoto },
   { name: "Ashish Bhadesia", role: "Chief Financial Officer",     company: "Comex Group",    photo: AshishPhoto },
   { name: "CPA Vincent Onyango", role: "Internal Auditor",          company: "Comex Group",    photo: VincentPhoto },
-  { name: "David Njuki",     role: "Project Manager",           company: "Comex Builders", photo: DavidPhoto },
+  { name: "David Mbogo",     role: "Project Manager",           company: "Comex Builders", photo: DavidPhoto },
   { name: "Mohamed Noor",    role: "General Manager",           company: "Comex Living",   photo: MohamedPhoto },
   { name: "Mariam Mamuli",   role: "General Manager",           company: "Comex Homes",    photo: MariamPhoto },
   { name: "Kennedy Mugo",   role: "Head Of Marketing",           company: "Comex Group",    photo: KenPhoto },
