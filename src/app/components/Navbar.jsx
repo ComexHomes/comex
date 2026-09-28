@@ -15,6 +15,7 @@ const MENU_LIST = [
   { text: "Balozi Suites", href: "https://www.balozisuites.com/" },
   { text: "The Reveal", href: "https://www.thereveal.co.ke/" },
   { text: "Astana Residence", href: "https://www.astanaresidence.com/" },
+  { text: "Lukenya Ridge", href: "https://www.lukenyaridge.com/" },
   { text: "Our Team", href: "/our-team" },
 ];
 const Navbar = () => {

@@ -10,6 +10,7 @@ import nyayotwo from "../../../assets/Lounge_angle 3.jpg";
 import balozi from "../../../assets/balozieight.jpg";
 import reveal from "../../../assets/Reveal rooftop (1).jpg";
 import astanaresidence from "../../../assets/001.jpg";
+import lukenyaridge from "../../../assets/lukenya-ridge.jpg";
 
 export default function Properties() {
   useEffect(() => {
@@ -17,6 +18,15 @@ export default function Properties() {
   }, []);
 
   const propertyFeatures = [
+    {
+      id: 0,
+      title: "Lukenya Ridge",
+      image: lukenyaridge,
+      location: "Lukenya, Mombasa Road",
+      availablesuits: "Premium 50 x 100 Plots",
+      link: "https://www.lukenyaridge.com/",
+      units: "Available Plots",
+    },
     {
       id: 1,
       title: "Astana Residence",
