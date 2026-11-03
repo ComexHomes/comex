@@ -4,6 +4,7 @@ export const metadata = {
   title: "Our Team — Comex Group",
   description:
     "Meet the leadership team driving Comex Group's vision across real estate development, living, and homes.",
+  alternates: { canonical: "/our-team" },
 };
 
 export default function OurTeamPage() {

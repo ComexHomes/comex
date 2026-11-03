@@ -7,6 +7,8 @@ import NavItem from "./NavItem";
 
 const MENU_LIST = [
   { text: "Home", href: "/" },
+  { text: "All Properties", href: "/properties" },
+  { text: "Invest / Diaspora", href: "/real-estate-investment-nairobi" },
   {
     text: "Nyayo View suites One",
     href: "https://www.nyayoviewsuites.co.ke/nyayoone",
@@ -31,7 +33,7 @@ const Navbar = () => {
             className="nav-image"
             priority="true"
             height={70}
-            alt="reveal logo"
+            alt="Comex Homes logo"
           />
         </Link>
         <div

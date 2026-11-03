@@ -15,9 +15,9 @@ function Whycomex() {
   const reasons = [
     {
       id: 1,
-      title: "9% - 15% GUARANTEED",
+      title: "PROJECTED 9% - 15% ANNUAL RETURNS",
       description:
-        "We help you achieve consistent and above market guaranteed returns at 9% - 15% net per annum via ownership of a premium real estate property.",
+        "Own a premium Nairobi apartment with projected net returns of 9% - 15% per annum, based on current rents and occupancy. Returns are projections, not guarantees.",
     },
     {
       id: 2,
