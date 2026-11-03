@@ -65,7 +65,7 @@ export default function Landing({ params }) {
               <li>WhatsApp us for prices, floor plans and a live video viewing</li>
               <li>Ask someone you trust to visit the site and our finished projects</li>
               <li>Your own Kenyan advocate checks the title and the sale agreement</li>
-              <li>Sign the offer letter and pay the 25% deposit by bank transfer to the account named in the agreement</li>
+              <li>Sign the offer letter and pay the 25% deposit in USD or KES by bank transfer to the account named in the agreement</li>
               <li>Pay the balance over up to 24 months while you get construction updates</li>
               <li>At handover we find a tenant, collect rent and keep you updated</li>
             </ol>
