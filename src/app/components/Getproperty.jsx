@@ -26,7 +26,7 @@ function Getproperty() {
         starting from KES 3.51M at Astana Residence, Ngara.
       </p>
 
-      <h2 className="properties-heading">PROJECTED 9% - 15% ANNUAL RETURNS</h2>
+      <h2 className="properties-heading">EXPECTED RENTAL YIELD OF ABOUT 10%</h2>
 
       <div className="schedule-meet">
         <div className="texmex">

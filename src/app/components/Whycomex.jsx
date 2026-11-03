@@ -15,9 +15,9 @@ function Whycomex() {
   const reasons = [
     {
       id: 1,
-      title: "PROJECTED 9% - 15% ANNUAL RETURNS",
+      title: "EXPECTED RENTAL YIELD OF ABOUT 10%",
       description:
-        "Own a premium Nairobi apartment with projected net returns of 9% - 15% per annum, based on current rents and occupancy. Returns are projections, not guarantees.",
+        "Own a premium Nairobi apartment with an expected rental yield of about 10% a year: KES 29,000 a month on a KES 3.51M studio and KES 45,000 on a KES 5.46M one bedroom at Astana Residence. Rent is an estimate, not a guarantee.",
     },
     {
       id: 2,

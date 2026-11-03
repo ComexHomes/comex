@@ -37,7 +37,7 @@ const TEAM = [
 const STATS = [
   { value: "4",      label: "Business Divisions" },
   { value: "9",      label: "Senior Leaders" },
-  { value: "9–15%",  label: "Guaranteed Returns" },
+  { value: "10%",    label: "Expected Rental Yield" },
   { value: "1000+",  label: "Happy Investors" },
 ];
 
