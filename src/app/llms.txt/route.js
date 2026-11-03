@@ -10,7 +10,7 @@ export function GET() {
     "",
     `> ${ORG.description}`,
     "",
-    `Prices from ${ORG.priceFrom}. Payment plan: ${ORG.paymentPlan}. Payments accepted in ${ORG.currencies}. Phone and WhatsApp: ${PHONE}. Office: ${ORG.address.streetAddress}, Nairobi, Kenya. Open Monday to Friday 7:30am to 4:30pm.`,
+    `Prices from ${ORG.priceFrom}. Payment plan: ${ORG.paymentPlan}. Payments accepted in ${ORG.currencies}. Sales line (buyers and investors only) and WhatsApp: ${PHONE}. Office: ${ORG.address.streetAddress}, Nairobi, Kenya. Open Monday to Friday 7:30am to 4:30pm. Rentals, short stays and Airbnb enquiries for completed Comex buildings (Balozi Suites, Nyayo View Suites, The Reveal) are handled by Comex Living on +254709501500, not the sales line.`,
     "",
     "## Projects",
     ...PROJECTS.map(
