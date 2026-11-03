@@ -10,7 +10,7 @@ export function GET() {
     "",
     `> ${ORG.description}`,
     "",
-    `Prices from ${ORG.priceFrom}. Payment plan: ${ORG.paymentPlan}. Phone and WhatsApp: ${PHONE}. Office: ${ORG.address.streetAddress}, Nairobi, Kenya. Open Monday to Friday 7:30am to 4:30pm.`,
+    `Prices from ${ORG.priceFrom}. Payment plan: ${ORG.paymentPlan}. Payments accepted in ${ORG.currencies}. Phone and WhatsApp: ${PHONE}. Office: ${ORG.address.streetAddress}, Nairobi, Kenya. Open Monday to Friday 7:30am to 4:30pm.`,
     "",
     "## Projects",
     ...PROJECTS.map(
