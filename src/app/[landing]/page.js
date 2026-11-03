@@ -4,7 +4,7 @@ import { LANDINGS, SITE_URL, ORG, HOME_IMAGE } from "../data/seo";
 import JsonLd from "../components/JsonLd";
 import YieldCalculator from "../components/YieldCalculator";
 import { GUIDES } from "../data/guides";
-import { Breadcrumbs, CtaBar, ProjectGrid, FaqList, faqSchema, breadcrumbSchema, wrap } from "../components/SeoBlocks";
+import { Breadcrumbs, CtaBar, SoldOutNotice, ProjectGrid, FaqList, faqSchema, breadcrumbSchema, wrap } from "../components/SeoBlocks";
 
 // Only the slugs in LANDINGS exist; every other path still 404s.
 export const dynamicParams = false;
@@ -75,7 +75,7 @@ export default function Landing({ params }) {
             </p>
           </>
         )}
-        <CtaBar project={l.h1} />
+        {l.soldOut ? <SoldOutNotice name={l.h1.split(":")[0]} /> : <CtaBar project={l.h1} />}
         {l.calculator && <YieldCalculator />}
         <h2 style={{ fontSize: 26, fontWeight: 700, margin: "32px 0 16px" }}>{l.kind === "land" ? "Available plots" : "Available projects"}</h2>
         <ProjectGrid slugs={l.projects} />
