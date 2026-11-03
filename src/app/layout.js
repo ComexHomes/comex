@@ -58,6 +58,8 @@ const orgSchema = {
   description: ORG.description,
   telephone: PHONE,
   priceRange: "KES 2,200,000 and above",
+  currenciesAccepted: "KES, USD",
+  paymentAccepted: "Bank transfer",
   address: { "@type": "PostalAddress", ...ORG.address },
   areaServed: ["Nairobi", "South B", "Ngara", "Kilimani", "Nairobi West", "Machakos County", "Kenya"],
   knowsAbout: ["Studio apartments for sale in Nairobi", "One bedroom apartments for sale in Nairobi", "Off plan property investment in Kenya", "Buying property in Kenya from the diaspora", "Plots for sale along Mombasa Road", "Rental property management in Nairobi"],
