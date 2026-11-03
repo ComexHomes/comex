@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { LANDINGS, PROJECTS, ORG } from "../data/seo";
+import { LANDINGS, ORG } from "../data/seo";
 import JsonLd from "./JsonLd";
 import { FaqList, faqSchema, wrap } from "./SeoBlocks";
 
@@ -21,15 +21,6 @@ export default function HomeSeo() {
             </Link>
           ))}
         </div>
-        <p style={{ marginTop: 18 }}>
-          Project details:{" "}
-          {PROJECTS.map((p, i) => (
-            <span key={p.slug}>
-              {i > 0 && " · "}
-              <Link href={`/properties/${p.slug}`}>{p.name} ({p.area})</Link>
-            </span>
-          ))}
-        </p>
       </section>
       <FaqList />
     </>
