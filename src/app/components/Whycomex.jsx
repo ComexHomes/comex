@@ -29,7 +29,7 @@ function Whycomex() {
       id: 3,
       title: "GET FLEXIBLE PAYMENT PLAN",
       description:
-        "A deposit of 25% to be made upon signing the offer letter Balance payable within 24 months.",
+        "A deposit of 25% to be made upon signing the offer letter. Balance payable in quarterly instalments during construction.",
     },
   ];
 

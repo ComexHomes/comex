@@ -18,7 +18,7 @@ function Process() {
       id: 2,
       title: "Payment",
       content:
-        "A deposit of 25% to be made upon signing the offer letter. Balance payable within 24 months.",
+        "A deposit of 25% to be made upon signing the offer letter. Balance payable in quarterly instalments during construction.",
       image: Payment,
     },
     {
