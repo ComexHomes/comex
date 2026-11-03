@@ -17,7 +17,7 @@ function projectFaqs(p) {
     { q: `What units are available at ${p.name}?`, a: p.units.map((u) => `${u.type}${u.size ? ` (${u.size})` : ""}: ${u.price}`).join(". ") + "." },
     { q: `What is the current status of ${p.name}?`, a: `${p.status}.` },
   ];
-  if (!p.available && !p.slug.includes("lukenya"))
+  if (!p.available && p.status.includes("handed over"))
     f.push({ q: `Can I rent or book a short stay at ${p.name}?`, a: "Comex Homes sales (0709 501 501) handles buyers and investors only. Rentals, short stays and Airbnb enquiries are handled by Comex Living on 0709 501 500." });
   if (p.available) f.push({ q: `Is there a payment plan for ${p.name}?`, a: `Yes. ${p.paymentPlan || ORG.paymentPlan}.` });
   return f;
