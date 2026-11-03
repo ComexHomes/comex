@@ -14,7 +14,7 @@ export const HOME_IMAGE = homeImg.src;
 export const SITE_URL = "https://www.comexhomes.ke";
 export const PHONE = "+254709501501";
 export const WHATSAPP = "https://wa.me/254709501501";
-// Rentals, short stays and Airbnb enquiries for completed Comex buildings go to Comex Living,
+// Rentals, short stays and Airbnb enquiries for handed over Comex buildings go to Comex Living,
 // so the sales line 0709 501 501 stays for buyers and investors.
 export const LIVING_PHONE = "+254709501500";
 export const LIVING_PHONE_DISPLAY = "0709 501 500";
@@ -38,7 +38,7 @@ export const ORG = {
     "https://ke.linkedin.com/company/comex-homes",
   ],
   priceFrom: "KES 3.51M",
-  paymentPlan: "25% deposit on signing the offer letter, balance payable within 24 months",
+  paymentPlan: "25% deposit on signing, balance in quarterly instalments during construction; early full payment may qualify for a discount",
   currencies: "Kenya shillings (KES) or US dollars (USD) by bank transfer",
 };
 
@@ -55,7 +55,6 @@ export const PROJECTS = [
       { type: "One bedroom apartment", size: "452 sqft", price: "KES 5,460,000", rent: "KES 45,000 per month (expected)" },
     ],
     priceFromNumber: 3510000,
-    paymentPlan: "25% deposit, balance in quarterly instalments during construction; early full payment may qualify for a discount",
     amenities: ["Swimming pool", "High speed lifts", "CCTV and manned security", "Backup generator", "Borehole water", "Fully fitted gym", "Coffee lounge", "Business centre", "Rooftop residents lounge"],
     externalUrl: "https://www.astanaresidence.com/",
     image: astanaImg.src,
@@ -77,14 +76,14 @@ export const PROJECTS = [
     externalUrl: "https://www.thereveal.co.ke/",
     image: revealImg.src,
     summary:
-      "The Reveal is a sold out block of studio and one bedroom apartments on Kabarnet Road off Ngong Road in Kilimani, with a rooftop pool, gym and coffee shop. Buyers looking for similar units can choose Astana Residence in Ngara, selling now.",
+      "The Reveal is a sold out block of studio and one bedroom apartments on Kabarnet Road off Ngong Road in Kilimani, now nearing completion, with a rooftop pool, gym and coffee shop. Buyers looking for similar units can choose Astana Residence in Ngara, selling now.",
   },
   {
     slug: "balozi-suites-south-b",
     name: "Balozi Suites",
     area: "South B",
     locationLine: "South B, Nairobi, overlooking the Nairobi Expressway",
-    status: "Sold out, handed over (97% occupied)",
+    status: "Sold out, handed over and fully occupied",
     available: false,
     units: [
       { type: "Executive studio", price: "Sold out" },
@@ -94,7 +93,7 @@ export const PROJECTS = [
     externalUrl: "https://www.balozisuites.com/",
     image: baloziImg.src,
     summary:
-      "Balozi Suites is a completed and sold out block of executive studios and 510 sqft one bedroom apartments in South B, 97% occupied, with views of the Nairobi Expressway and CBD, a rooftop pool and gym. Buyers looking for similar units can choose Astana Residence in Ngara, selling now.",
+      "Balozi Suites is a sold out block of executive studios and 510 sqft one bedroom apartments in South B, handed over and fully occupied, with views of the Nairobi Expressway and CBD, a rooftop pool and gym. Buyers looking for similar units can choose Astana Residence in Ngara, selling now.",
   },
   {
     slug: "nyayo-view-suites-two-nairobi-west",
@@ -103,12 +102,12 @@ export const PROJECTS = [
     locationLine: "Nairobi West, near Nyayo Stadium",
     status: "Sold out, structure complete, handover being planned",
     available: false,
-    units: [{ type: "Executive and premium one bedroom apartments", price: "Sold out, join the resale waitlist" }],
+    units: [{ type: "Executive and premium one bedroom apartments", price: "Sold out" }],
     amenities: [],
     externalUrl: "https://www.nyayoviewsuites.co.ke/",
     image: nyayo2Img.src,
     summary:
-      "Nyayo View Suites II is a block of executive and premium one bedroom apartments in Nairobi West near Nyayo Stadium. It is nearing completion and sold out.",
+      "Nyayo View Suites II is a block of executive and premium one bedroom apartments in Nairobi West near Nyayo Stadium. It is sold out. The structure is complete and handover is being planned.",
   },
   {
     slug: "nyayo-view-suites-one-nairobi-west",
@@ -122,7 +121,7 @@ export const PROJECTS = [
     externalUrl: "https://www.nyayoviewsuites.co.ke/nyayoone",
     image: nyayo1Img.src,
     summary:
-      "Nyayo View Suites I is a completed block of executive studios and one bedroom apartments in Nairobi West, sold out and fully occupied by tenants managed by Comex Homes. It is our proof of delivery.",
+      "Nyayo View Suites I is a handed over block of executive studios and one bedroom apartments in Nairobi West, sold out and fully occupied by tenants managed by Comex Homes. It is our proof of delivery.",
   },
   {
     slug: "lukenya-ridge-plots",
@@ -235,18 +234,18 @@ export const LANDINGS = [
     h1: "Studio Apartments for Sale in Nairobi",
     title: "Studio Apartments for Sale in Nairobi from KES 3.51M | Comex Homes",
     description:
-      "Buy an affordable luxury studio apartment in Nairobi direct from the developer: Astana Residence, Ngara, from KES 3.51M with a 25% deposit, 24 month payment plan and rental management.",
+      "Buy an affordable luxury studio apartment in Nairobi direct from the developer: Astana Residence, Ngara, from KES 3.51M with a 25% deposit, the balance in quarterly instalments during construction, and rental management.",
     keywords: ["studio apartments for sale in nairobi", "cheap studio apartments for sale in nairobi", "studio apartment for sale nairobi cbd", "bedsitter for sale nairobi"],
     projects: ["astana-residence-ngara"],
     intro:
-      "Comex Homes builds and sells executive studio apartments in Nairobi. Studios at Astana Residence in Ngara start at KES 3.51M. You buy direct from the developer, pay 25% on signing and the balance over 24 months, and we find tenants and collect rent for you once the unit is ready.",
+      "Comex Homes builds and sells executive studio apartments in Nairobi. Studios at Astana Residence in Ngara start at KES 3.51M. You buy direct from the developer, pay 25% on signing and the balance in quarterly instalments during construction, and we find tenants and collect rent for you once the unit is ready.",
   },
   {
     slug: "1-bedroom-apartments-for-sale-nairobi",
     h1: "1 Bedroom Apartments for Sale in Nairobi",
     title: "1 Bedroom Apartments for Sale in Nairobi | Payment Plan | Comex Homes",
     description:
-      "Affordable luxury one bedroom apartments for sale in Nairobi: Ngara from KES 5.46M, South B and Kilimani. Buy direct from the developer with a 24 month payment plan and managed rentals.",
+      "Affordable luxury one bedroom apartments for sale in Nairobi at Astana Residence, Ngara, from KES 5.46M. Buy direct from the developer with a 25% deposit, quarterly instalments and managed rentals.",
     keywords: ["1 bedroom apartment for sale in nairobi", "cheap 1 bedroom apartments for sale in nairobi", "one bedroom apartment for sale nairobi", "1 bedroom off plan nairobi"],
     projects: ["astana-residence-ngara"],
     intro:
@@ -258,11 +257,11 @@ export const LANDINGS = [
     h1: "Balozi Suites, South B: Sold Out",
     title: "Apartments in South B: Balozi Suites Sold Out, Astana Selling Now | Comex Homes",
     description:
-      "Balozi Suites in South B is sold out and 97% occupied. See Comex Homes studios and one bedrooms selling now at Astana Residence, Ngara, from KES 3.51M with a 24 month payment plan.",
+      "Balozi Suites in South B is sold out, handed over and fully occupied. See Comex Homes studios and one bedrooms selling now at Astana Residence, Ngara, from KES 3.51M with a 25% deposit.",
     keywords: ["studio apartments for sale south b", "1 bedroom apartment for sale in south b", "south b apartments for sale"],
     projects: ["astana-residence-ngara", "balozi-suites-south-b"],
     intro:
-      "Balozi Suites, our completed South B block close to the Nairobi Expressway, Capital Centre and JKIA, is sold out and 97% occupied. Our next units selling now are at Astana Residence in Ngara, minutes from the CBD, with the same rooftop amenities and rental management.",
+      "Balozi Suites, our South B block close to the Nairobi Expressway, Capital Centre and JKIA, is sold out, handed over and fully occupied. Our next units selling now are at Astana Residence in Ngara, minutes from the CBD, with the same rooftop amenities and rental management.",
   },
   {
     slug: "apartments-for-sale-ngara",
@@ -281,34 +280,35 @@ export const LANDINGS = [
     h1: "The Reveal, Kabarnet Road, Kilimani: Sold Out",
     title: "The Reveal, Kabarnet Road, Kilimani: Sold Out | Comex Homes",
     description:
-      "The Reveal on Kabarnet Road, Kilimani is sold out. Comex Homes studios and one bedrooms are selling now at Astana Residence, Ngara, from KES 3.51M with a 24 month payment plan.",
+      "The Reveal on Kabarnet Road, Kilimani is sold out and nearing completion. Comex Homes studios and one bedrooms are selling now at Astana Residence, Ngara, from KES 3.51M with a 25% deposit.",
     keywords: ["apartments for sale kabarnet road", "studio apartment for sale kilimani", "1 bedroom apartment for sale ngong road"],
     projects: ["astana-residence-ngara"],
     intro:
-      "The Reveal on Kabarnet Road off Ngong Road is sold out. If you were looking for a Comex Homes studio or one bedroom, Astana Residence in Ngara is selling now, minutes from the CBD.",
+      "The Reveal on Kabarnet Road off Ngong Road is sold out and nearing completion. If you were looking for a Comex Homes studio or one bedroom, Astana Residence in Ngara is selling now, minutes from the CBD.",
   },
   {
     slug: "apartments-for-sale-nairobi-west",
     soldOut: true,
     h1: "Apartments in Nairobi West by Comex Homes",
+    soldOutName: "Nyayo View Suites",
     title: "Apartments for Sale in Nairobi West | Nyayo View Suites | Comex Homes",
     description:
-      "Nyayo View Suites I and II in Nairobi West: executive studios and one bedroom apartments by Comex Homes. Both are sold out; see similar units selling now in South B and Ngara.",
+      "Nyayo View Suites I and II in Nairobi West: executive studios and one bedroom apartments by Comex Homes. Both are sold out; see similar units selling now at Astana Residence in Ngara.",
     keywords: ["apartments for sale nairobi west", "studio apartments for sale in nairobi west", "nyayo view suites"],
     projects: ["astana-residence-ngara", "nyayo-view-suites-one-nairobi-west", "nyayo-view-suites-two-nairobi-west"],
     intro:
-      "Nyayo View Suites I is fully occupied and Nyayo View Suites II is nearing completion, both sold out. If you wanted Nairobi West, the closest equivalent selling now is Astana Residence in Ngara.",
+      "Both are sold out. Nyayo View Suites I is handed over and fully occupied, and Nyayo View Suites II's structure is complete with handover being planned. If you wanted Nairobi West, the closest equivalent selling now is Astana Residence in Ngara.",
   },
   {
     slug: "apartments-for-sale-in-nairobi-under-4-million",
     h1: "Apartments for Sale in Nairobi Under 4 Million",
     title: "Apartments for Sale in Nairobi for 3 to 4 Million | Comex Homes",
     description:
-      "Looking for an apartment in Nairobi for 3 or 4 million shillings? Astana Residence studios in Ngara are KES 3.51M, with a 25% deposit of about KES 877,500 and 24 months to pay.",
+      "Looking for an apartment in Nairobi for 3 or 4 million shillings? Astana Residence studios in Ngara are KES 3.51M, with a 25% deposit of about KES 877,500 and the balance in quarterly instalments during construction.",
     keywords: ["apartments for sale in nairobi for 3 million", "apartments for sale in nairobi for 4 million", "studio for sale nairobi under 4 million"],
     projects: ["astana-residence-ngara"],
     intro:
-      "Studios at Astana Residence in Ngara are KES 3.51M. On a 25% deposit that is about KES 877,500 to start, with the balance spread over 24 months, so you can own a rent paying unit in Nairobi without a mortgage.",
+      "Studios at Astana Residence in Ngara are KES 3.51M. On a 25% deposit that is about KES 877,500 to start, with the balance in quarterly instalments during construction, so you can own a rent paying unit in Nairobi without a mortgage.",
   },
   {
     slug: "buy-property-in-nairobi-from-diaspora",
@@ -340,7 +340,7 @@ export const LANDINGS = [
     intro: `Comex Homes helps ${c.people} own rent paying property in Nairobi without flying home. You view by video, pay in stages, and once the unit is complete we find tenants, collect rent and keep you updated. ${c.tz}`,
     bullets: [
       "Live video viewings and a 3D virtual tour (Astana Residence)",
-      `Payment plan: ${"25% deposit on signing the offer letter, balance within 24 months"}`,
+      "Payment plan (Astana Residence): 25% deposit, balance in quarterly instalments during construction",
       "Pay in US dollars (USD) or Kenya shillings by bank transfer from abroad",
       "You appoint your own advocate in Kenya to review the sale agreement and title",
       "After handover, Comex Homes finds tenants, collects rent and manages the unit",
@@ -352,15 +352,15 @@ export const LANDINGS = [
     kind: "investor",
     h1: "Real Estate Investment in Nairobi: Studios and 1 Bedrooms for Rental Income",
     title: "Real Estate Investment in Nairobi: Rental Yield, Off Plan and Buy to Let | Comex Homes",
-    description: "Invest in Nairobi rental apartments with Comex Homes: studios from KES 3.51M in Ngara with about 10% expected yield, 24 month payment plan, full management and a delivered track record.",
+    description: "Invest in Nairobi rental apartments with Comex Homes: studios from KES 3.51M in Ngara with about 10% expected yield, a 25% deposit with quarterly instalments, full management and a delivered track record.",
     keywords: ["real estate investment nairobi", "best real estate investment in nairobi", "buy to let nairobi", "rental yield nairobi apartments", "property investment kenya"],
     projects: ["astana-residence-ngara"],
-    intro: "Studios and one bedrooms are the most rented homes in Nairobi because young professionals and students want to live close to the CBD and work hubs. Comex Homes builds exactly these units and manages them for owners: Balozi Suites, The Reveal and Nyayo View Suites all sold out, and Astana Residence in Ngara is selling now. At Astana Residence the expected rent is KES 29,000 a month on a KES 3.51M studio, an expected gross yield of about 10%.",
+    intro: "Studios and one bedrooms are the most rented homes in Nairobi because young professionals and students want to live close to the CBD and work hubs. Comex Homes builds exactly these units and manages them for owners: Balozi Suites, The Reveal and Nyayo View Suites are all sold out, and Astana Residence in Ngara is the project selling now. At Astana Residence the expected rent is KES 29,000 a month on a KES 3.51M studio, an expected gross yield of about 10%.",
     bullets: [
       "Expected gross yield of about 10% at Astana Residence (KES 29,000 rent on a KES 3.51M studio)",
-      "Off plan entry with 25% deposit and 24 months to pay, so capital is spread over the build",
+      "Off plan entry with a 25% deposit and quarterly instalments, so capital is spread over the build",
       "Full management: tenant sourcing, rent collection and upkeep",
-      "Track record: Nyayo View Suites I and II, Balozi Suites and The Reveal all sold out",
+      "Track record: Balozi Suites and Nyayo View Suites I handed over and fully occupied; Nyayo View Suites II and The Reveal sold out",
       "Buying several units? Talk to us about a multi unit allocation in one block",
     ],
     calculator: true,
@@ -370,16 +370,16 @@ export const LANDINGS = [
     kind: "investor",
     h1: "Off Plan Property Investment in Kenya",
     title: "Off Plan Apartments in Nairobi: How to Invest Safely | Comex Homes",
-    description: "How off plan apartment investment works in Nairobi: staged payments, what to check before you pay, and Comex Homes projects selling off plan now, with a delivered track record.",
+    description: "How off plan apartment investment works in Nairobi: staged payments, what to check before you pay, and Astana Residence, the Comex Homes project selling off plan now.",
     keywords: ["off plan property investment kenya", "off plan apartments nairobi", "off plan apartments for sale nairobi payment plan"],
     projects: ["astana-residence-ngara"],
-    intro: "Buying off plan means you buy before the building is finished, usually at a lower price, and pay as construction progresses. The risk is delivery, so check the developer's finished projects first. Comex Homes has delivered Nyayo View Suites I (fully occupied) and Balozi Suites (97% occupied), sold out The Reveal and Nyayo View Suites II, and Astana Residence in Ngara is selling off plan now.",
+    intro: "Buying off plan means you buy before the building is finished, usually at a lower price, and pay as construction progresses. The risk is delivery, so check the developer's finished projects first. Comex Homes has handed over Nyayo View Suites I and Balozi Suites, both fully occupied. Nyayo View Suites II (structure complete, handover being planned) and The Reveal (nearing completion) are sold out. The only Comex Homes apartment project selling now is Astana Residence in Ngara, off plan.",
     bullets: [
-      "Check finished projects you can visit: Nyayo View Suites I and Balozi Suites, both sold out and occupied",
+      "Check finished projects you can visit: Nyayo View Suites I and Balozi Suites, both handed over and fully occupied",
       "Ask for approvals: county building approval and NEMA licence for the project",
       "Have your own advocate review the sale agreement and the mother title before paying",
       "Pay into the account named in the sale agreement, never to an individual",
-      "Payment plan: 25% deposit, balance within 24 months",
+      "Payment plan at Astana Residence: 25% deposit, balance in quarterly instalments during construction",
     ],
     calculator: true,
   },
@@ -392,7 +392,7 @@ export const FAQS = [
   },
   {
     q: "Does Comex Homes offer a payment plan?",
-    a: "Yes. Pay a 25% deposit when you sign the offer letter and the balance within 24 months, with no bank mortgage needed. Payments are accepted in Kenya shillings or US dollars.",
+    a: "Yes. At Astana Residence you pay a 25% deposit on signing and the balance in quarterly instalments during construction, with no bank mortgage needed. Early full payment may qualify for a discount. Payments are accepted in Kenya shillings or US dollars.",
   },
   {
     q: "Where are Comex Homes apartments located?",
@@ -408,7 +408,7 @@ export const FAQS = [
   },
   {
     q: "Has Comex Homes delivered projects before?",
-    a: "Yes. Nyayo View Suites I, Nyayo View Suites II, Balozi Suites and The Reveal are all sold out. Nyayo View Suites I is fully occupied and Balozi Suites is 97% occupied.",
+    a: "Yes. Nyayo View Suites I and Balozi Suites are handed over and fully occupied. Nyayo View Suites II is sold out, its structure is complete and handover is being planned. The Reveal is sold out and nearing completion.",
   },
   {
     q: "Does Comex Homes sell land along Mombasa Road?",
@@ -428,7 +428,7 @@ export const FAQS = [
   },
   {
     q: "Can I rent or book a short stay at Balozi Suites or Nyayo View Suites?",
-    a: "Comex Homes sales (0709 501 501) only handles buyers and investors. Rentals, short stays and Airbnb enquiries at completed Comex buildings are handled by Comex Living on 0709 501 500.",
+    a: "Comex Homes sales (0709 501 501) only handles buyers and investors. Rentals, short stays and Airbnb enquiries at handed over Comex buildings are handled by Comex Living on 0709 501 500.",
   },
   {
     q: "How do I book a site visit?",

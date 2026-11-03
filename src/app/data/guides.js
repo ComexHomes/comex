@@ -17,7 +17,7 @@ export const GUIDES = [
       {
         h: "1. Decide what you want the property to do",
         p: [
-          "If you want monthly income, studios and one bedrooms close to the CBD rent fastest. Comex Homes has built and sold out these in South B, Kilimani and Nairobi West, and is selling them now at Astana Residence in Ngara.",
+          "If you want monthly income, studios and one bedrooms close to the CBD rent fastest. Comex Homes has sold out these in South B, Kilimani and Nairobi West, and is selling them now at Astana Residence in Ngara.",
           "If you want land to build on later, a 50 by 100 plot on the Mombasa Road corridor, such as Lukenya Ridge, costs less today and gains as Nairobi grows south east.",
         ],
       },
@@ -45,7 +45,7 @@ export const GUIDES = [
       {
         h: "5. Pay safely",
         p: [
-          "Pay by bank transfer only into the account named in the sale agreement, never to an individual's personal account or mobile number. Keep every receipt. Comex Homes accepts payment in US dollars or Kenya shillings, and offers a 25% deposit on signing the offer letter and the balance within 24 months.",
+          "Pay by bank transfer only into the account named in the sale agreement, never to an individual's personal account or mobile number. Keep every receipt. Comex Homes accepts payment in US dollars or Kenya shillings, and at Astana Residence offers a 25% deposit on signing with the balance in quarterly instalments during construction.",
         ],
       },
       {
