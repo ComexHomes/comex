@@ -23,7 +23,7 @@ function Getproperty() {
         with state-of-the-art conveniences and ultra-luxurious amenities.
         <br /> <br />
         Choose from our spectacular range of iconic properties in Nairobi
-        starting from 2.2M.
+        starting from KES 3.51M at Astana Residence, Ngara.
       </p>
 
       <h2 className="properties-heading">PROJECTED 9% - 15% ANNUAL RETURNS</h2>
@@ -31,7 +31,7 @@ function Getproperty() {
       <div className="schedule-meet">
         <div className="texmex">
           <h2>Executive Studios and One BedRooms </h2>
-          <h3>Starting from Ksh 2.2M </h3>
+          <h3>Starting from Ksh 3.51M </h3>
         </div>
 
         <Link href="https://zfrmz.com/63qeS4QHxcWIQdgr1NB3" target="_blank">

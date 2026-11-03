@@ -46,7 +46,7 @@ export default function Properties() {
       location: "Kabarnet Road",
       availablesuits: "Studio, 1 Bedroom Apartments",
       link: "https://www.thereveal.co.ke/",
-      units: "Available Units",
+      units: "Sold Out",
     },
     {
       id: 3,
@@ -56,7 +56,7 @@ export default function Properties() {
       location: "South B",
       availablesuits: "Executive Studios and One Bedrooms",
       link: "https://www.balozisuites.com/",
-      units: "Available Units",
+      units: "Sold Out",
     },
     {
       id: 4,
