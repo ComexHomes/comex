@@ -17,7 +17,7 @@ export const GUIDES = [
       {
         h: "1. Decide what you want the property to do",
         p: [
-          "If you want monthly income, studios and one bedrooms close to the CBD rent fastest. Comex Homes builds these in Ngara, South B and Kilimani.",
+          "If you want monthly income, studios and one bedrooms close to the CBD rent fastest. Comex Homes has built and sold out these in South B, Kilimani and Nairobi West, and is selling them now at Astana Residence in Ngara.",
           "If you want land to build on later, a 50 by 100 plot on the Mombasa Road corridor, such as Lukenya Ridge, costs less today and gains as Nairobi grows south east.",
         ],
       },
