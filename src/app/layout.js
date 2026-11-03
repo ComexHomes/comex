@@ -14,7 +14,7 @@ export const metadata = {
     template: "%s",
   },
   description:
-    "Affordable luxury studios and 1 bedrooms in Nairobi from KES 3.51M at Astana Residence, Ngara. 25% deposit, 24 months to pay, rental management included.",
+    "Affordable luxury studios and 1 bedrooms in Nairobi from KES 3.51M at Astana Residence, Ngara. 25% deposit, quarterly instalments, rental management included.",
   keywords: [
     "studio apartments for sale in nairobi",
     "1 bedroom apartment for sale in nairobi",
@@ -32,7 +32,7 @@ export const metadata = {
     url: SITE_URL,
     title: "Affordable Luxury Studio and 1 Bedroom Apartments in Nairobi | Comex Homes",
     description:
-      "Studios and one bedrooms from KES 3.51M at Astana Residence, Ngara. 25% deposit, 24 months to pay, rental management included.",
+      "Studios and one bedrooms from KES 3.51M at Astana Residence, Ngara. 25% deposit, quarterly instalments, rental management included.",
     images: [{ url: HOME_IMAGE, alt: "Comex Homes apartment lounge, Nairobi" }],
   },
   twitter: { card: "summary_large_image", site: "@ComexHomes" },
