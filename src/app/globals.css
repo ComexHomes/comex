@@ -1285,3 +1285,11 @@ span {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* Section titles that were h1 (one h1 per page for SEO); same look as before */
+.text .sec-title { font-size: 70px; color: #fff; margin-top: -20px; text-transform: uppercase; font-weight: 400; text-align: center; }
+.contact-form-heading .sec-title { font-weight: 500; font-size: 30px; }
+.why-comex .head .sec-title { color: #000; font-size: 20px; text-transform: uppercase; }
+@media screen and (max-width: 768px) {
+  .main-banner .text .sec-title { font-size: 45px; text-align: center; }
+}

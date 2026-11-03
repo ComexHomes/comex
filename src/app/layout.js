@@ -10,11 +10,11 @@ import { SITE_URL, ORG, PHONE, PROJECTS, HOME_IMAGE } from "./data/seo";
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Affordable Luxury Studio and 1 Bedroom Apartments for Sale in Nairobi | Comex Homes",
+    default: "Affordable Luxury Apartments in Nairobi | Comex Homes",
     template: "%s",
   },
   description:
-    "Affordable luxury studios and one bedroom apartments in Nairobi from KES 3.51M at Astana Residence, Ngara, with pool, gym and residents lounge, direct from the developer. Track record: Balozi Suites, The Reveal and Nyayo View Suites sold out. 24 month payment plan and full rental management.",
+    "Affordable luxury studios and 1 bedrooms in Nairobi from KES 3.51M at Astana Residence, Ngara. 25% deposit, 24 months to pay, rental management included.",
   keywords: [
     "studio apartments for sale in nairobi",
     "1 bedroom apartment for sale in nairobi",
