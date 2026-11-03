@@ -20,7 +20,7 @@ export const ORG = {
   name: "Comex Homes",
   legalName: "Comex Homes Limited",
   description:
-    "Comex Homes is a Nairobi real estate company that develops, sells and manages affordable executive studio and one bedroom apartments in South B, Ngara, Kilimani (Kabarnet Road) and Nairobi West, with flexible payment plans and full rental management.",
+    "Comex Homes is a Nairobi real estate company that develops, sells and manages affordable luxury studio and one bedroom apartments, with rooftop pools, gyms and residents lounges, in South B, Ngara, Kilimani (Kabarnet Road) and Nairobi West, with flexible payment plans and full rental management.",
   address: {
     streetAddress: "Telkom Plaza, 1st Floor, Hurlingham",
     addressLocality: "Nairobi",
@@ -191,7 +191,7 @@ export const LANDINGS = [
     h1: "Studio Apartments for Sale in Nairobi",
     title: "Studio Apartments for Sale in Nairobi from KES 2.2M | Comex Homes",
     description:
-      "Buy an affordable studio apartment in Nairobi direct from the developer. South B, Ngara and Kilimani studios with a 25% deposit and 24 month payment plan, plus rental management.",
+      "Buy an affordable luxury studio apartment in Nairobi direct from the developer. South B, Ngara and Kilimani studios with a 25% deposit and 24 month payment plan, plus rental management.",
     keywords: ["studio apartments for sale in nairobi", "cheap studio apartments for sale in nairobi", "studio apartment for sale nairobi cbd", "bedsitter for sale nairobi"],
     projects: ["astana-residence-ngara", "balozi-suites-south-b", "the-reveal-kabarnet-road"],
     intro:
@@ -202,7 +202,7 @@ export const LANDINGS = [
     h1: "1 Bedroom Apartments for Sale in Nairobi",
     title: "1 Bedroom Apartments for Sale in Nairobi | Payment Plan | Comex Homes",
     description:
-      "Affordable one bedroom apartments for sale in Nairobi: Ngara from KES 5.46M, South B and Kilimani. Buy direct from the developer with a 24 month payment plan and managed rentals.",
+      "Affordable luxury one bedroom apartments for sale in Nairobi: Ngara from KES 5.46M, South B and Kilimani. Buy direct from the developer with a 24 month payment plan and managed rentals.",
     keywords: ["1 bedroom apartment for sale in nairobi", "cheap 1 bedroom apartments for sale in nairobi", "one bedroom apartment for sale nairobi", "1 bedroom off plan nairobi"],
     projects: ["astana-residence-ngara", "balozi-suites-south-b", "the-reveal-kabarnet-road"],
     intro:
