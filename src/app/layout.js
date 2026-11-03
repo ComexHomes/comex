@@ -35,6 +35,15 @@ export const metadata = {
   },
   twitter: { card: "summary_large_image", site: "@ComexHomes" },
   robots: { index: true, follow: true, "max-image-preview": "large" },
+  // Search engine ownership tags. Paste each code into Vercel > Settings > Environment Variables.
+  verification: {
+    ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION } : {}),
+    ...(process.env.NEXT_PUBLIC_YANDEX_VERIFICATION ? { yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION } : {}),
+    other: {
+      ...(process.env.NEXT_PUBLIC_BING_VERIFICATION ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_VERIFICATION } : {}),
+      ...(process.env.NEXT_PUBLIC_META_DOMAIN_VERIFICATION ? { "facebook-domain-verification": process.env.NEXT_PUBLIC_META_DOMAIN_VERIFICATION } : {}),
+    },
+  },
 };
 
 const orgSchema = {
@@ -50,7 +59,17 @@ const orgSchema = {
   telephone: PHONE,
   priceRange: "KES 2,200,000 and above",
   address: { "@type": "PostalAddress", ...ORG.address },
-  areaServed: ["Nairobi", "South B", "Ngara", "Kilimani", "Nairobi West", "Machakos County"],
+  areaServed: ["Nairobi", "South B", "Ngara", "Kilimani", "Nairobi West", "Machakos County", "Kenya"],
+  knowsAbout: ["Studio apartments for sale in Nairobi", "One bedroom apartments for sale in Nairobi", "Off plan property investment in Kenya", "Buying property in Kenya from the diaspora", "Plots for sale along Mombasa Road", "Rental property management in Nairobi"],
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      contactType: "sales",
+      telephone: PHONE,
+      availableLanguage: ["English", "Swahili"],
+      areaServed: ["KE", "GB", "US", "AE", "CA", "AU", "DE", "QA", "SA", "SE", "NL"],
+    },
+  ],
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
