@@ -428,7 +428,7 @@ export const FAQS = [
   },
   {
     q: "Can I rent or book a short stay at Balozi Suites or Nyayo View Suites?",
-    a: "Comex Homes sales (0709 501 501) only handles buyers and investors. Rentals, short stays and Airbnb enquiries at handed over Comex buildings are handled by Comex Living on 0709 501 500.",
+    a: "Balozi Suites and Nyayo View Suites I are handed over. Rentals, short stays and Airbnb enquiries for these buildings are handled by Comex Living on 0709 501 500. Comex Homes sales (0709 501 501) only handles buyers and investors.",
   },
   {
     q: "How do I book a site visit?",
