@@ -51,6 +51,7 @@ export const PROJECTS = [
       { type: "One bedroom apartment", size: "452 sqft", price: "KES 5,460,000", rent: "KES 45,000 per month (expected)" },
     ],
     priceFromNumber: 3510000,
+    paymentPlan: "25% deposit, balance in quarterly instalments during construction; early full payment may qualify for a discount",
     amenities: ["Swimming pool", "High speed lifts", "CCTV and manned security", "Backup generator", "Borehole water", "Fully fitted gym", "Coffee lounge", "Business centre", "Rooftop residents lounge"],
     externalUrl: "https://www.astanaresidence.com/",
     image: astanaImg.src,
@@ -138,6 +139,45 @@ export const PROJECTS = [
 
 // Landing pages built around what Kenyans actually type into Google (checked on google.co.ke, Nov 2026).
 export const LANDINGS = [
+  {
+    slug: "apartments-for-sale-near-nairobi-cbd",
+    h1: "Apartments for Sale Near Nairobi CBD",
+    title: "Apartments for Sale Near Nairobi CBD: Ngara Studios from KES 3.51M | Comex Homes",
+    description: "Studios from KES 3.51M and one bedrooms from KES 5.46M at Astana Residence, Ngara, within walking distance of Nairobi CBD and two minutes from the Expressway.",
+    keywords: ["apartments for sale near nairobi cbd", "studio apartments for sale nairobi cbd", "1 bedroom apartments for sale near nairobi cbd"],
+    projects: ["astana-residence-ngara"],
+    intro: "Astana Residence in Ngara is within walking distance of Nairobi CBD, the National Museum and Thika Superhighway, and about two minutes from the Nairobi Expressway. Studios are 291 sqft from KES 3.51M and one bedrooms 452 sqft from KES 5.46M.",
+  },
+  {
+    slug: "studio-apartments-for-students-and-young-professionals-nairobi",
+    h1: "Buy to Let Studios for Students and Young Professionals in Nairobi",
+    title: "Buy to Let Studios Near the University of Nairobi and CBD | Comex Homes",
+    description: "Invest in a Ngara studio that rents to students and young professionals near the University of Nairobi and the CBD. KES 3.51M, expected rent KES 29,000 a month.",
+    keywords: ["student housing investment nairobi", "studio apartments near university of nairobi", "buy to let studio nairobi"],
+    projects: ["astana-residence-ngara"],
+    intro: "Ngara sits close to the CBD and the University of Nairobi, where students, interns and young professionals want small, secure units. Astana Residence studios are KES 3.51M with expected rent of KES 29,000 a month, and Comex Homes manages tenants for owners.",
+    calculator: true,
+  },
+  {
+    slug: "plots-for-sale-near-mlolongo-and-syokimau",
+    kind: "land",
+    h1: "Plots Near Mlolongo and Syokimau: The Lukenya Alternative",
+    title: "Plots Near Mlolongo and Syokimau: Lukenya Ridge Alternative | Comex Homes",
+    description: "Mlolongo and Syokimau plots are filling up. Lukenya Ridge further along Mombasa Road offers 50 by 100 plots in a 60 plot gated estate by Comex Homes.",
+    keywords: ["plots for sale in mlolongo", "plots for sale in syokimau", "cheap plots near syokimau"],
+    projects: ["lukenya-ridge-plots"],
+    intro: "Mlolongo and Syokimau filled up first as Nairobi grew along Mombasa Road. Buyers who want space and a planned layout now look further along the same corridor to Lukenya, where Lukenya Ridge offers 60 plots of 50 by 100 in a gated estate.",
+  },
+  {
+    slug: "plots-for-sale-machakos-county",
+    kind: "land",
+    h1: "Plots for Sale in Machakos County Near Nairobi",
+    title: "Plots for Sale in Machakos County, 45 Minutes from Nairobi | Comex Homes",
+    description: "Lukenya Ridge offers 50 by 100 plots in Machakos County, just off Mombasa Road and about 45 minutes from Nairobi CBD, in a planned gated estate.",
+    keywords: ["plots for sale in machakos county", "land for sale machakos near nairobi", "50 by 100 plots machakos"],
+    projects: ["lukenya-ridge-plots"],
+    intro: "Lukenya, in Machakos County, is one of the closest places to Nairobi where you can still buy a 50 by 100 plot in a planned estate. Lukenya Ridge is about 45 minutes from Nairobi CBD via Mombasa Road, near Daystar University and Lukenya Hills.",
+  },
   {
     slug: "land-for-sale-along-mombasa-road",
     kind: "land",
