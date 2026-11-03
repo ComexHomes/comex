@@ -264,6 +264,8 @@ export const LANDINGS = [
   },
   {
     slug: "buy-property-in-nairobi-from-diaspora",
+    kind: "diaspora",
+    steps: true,
     h1: "Buy an Apartment in Nairobi from the Diaspora",
     title: "Buy Property in Nairobi from the Diaspora | Managed Rentals | Comex Homes",
     description:
@@ -272,6 +274,65 @@ export const LANDINGS = [
     projects: ["astana-residence-ngara", "balozi-suites-south-b", "the-reveal-kabarnet-road"],
     intro:
       "Most of our buyers never need to fly home to buy. We share 3D tours and progress updates, you pay in stages, and once the unit is complete we find tenants, collect rent and send you statements.",
+  },
+  ...[
+    { code: "uk", place: "the UK", people: "Kenyans in the UK", h: "Buy Property in Kenya from the UK", kw: ["buy property in kenya from uk", "kenyan diaspora uk property", "invest in kenya from uk"], tz: "Our team works 7:30am to 4:30pm Nairobi time, which is early morning to early afternoon in the UK, and WhatsApp messages are answered after hours." },
+    { code: "usa", place: "the USA", people: "Kenyans in the USA", h: "Buy Property in Kenya from the USA", kw: ["buy property in kenya from usa", "kenyan diaspora usa real estate", "invest in kenya from america"], tz: "Nairobi is 7 to 10 hours ahead of the US, so we schedule video viewings in your morning or evening and answer WhatsApp messages after hours." },
+    { code: "uae-gulf", place: "the UAE and the Gulf", people: "Kenyans in Dubai, Abu Dhabi, Qatar and Saudi Arabia", h: "Buy Property in Kenya from Dubai and the Gulf", kw: ["buy property in kenya from dubai", "kenyans in uae invest in kenya", "kenyan diaspora gulf real estate"], tz: "Nairobi is 1 hour behind the UAE, so you can call or join a video viewing during your normal working day." },
+    { code: "canada", place: "Canada", people: "Kenyans in Canada", h: "Buy Property in Kenya from Canada", kw: ["buy property in kenya from canada", "kenyan diaspora canada property"], tz: "Nairobi is 7 to 10 hours ahead of Canada, so we book video viewings in your morning or evening." },
+    { code: "europe-australia", place: "Europe and Australia", people: "Kenyans in Germany, Sweden, the Netherlands, Australia and beyond", h: "Buy Property in Kenya from Europe or Australia", kw: ["buy property in kenya from germany", "buy property in kenya from australia", "kenyan diaspora europe real estate"], tz: "Wherever you are, WhatsApp is the fastest way to reach our sales team and book a video viewing at a time that suits you." },
+  ].map((c) => ({
+    slug: `buy-property-in-kenya-from-${c.code}`,
+    kind: "diaspora",
+    h1: c.h,
+    title: `${c.h}: Studios, 1 Bedrooms and Plots | Comex Homes`,
+    description: `${c.people} buy Nairobi apartments and Mombasa Road plots with Comex Homes: video viewings, staged payments, your own advocate and full tenant management after handover.`,
+    keywords: c.kw,
+    projects: ["astana-residence-ngara", "balozi-suites-south-b", "the-reveal-kabarnet-road", "lukenya-ridge-plots"],
+    intro: `Comex Homes helps ${c.people} own rent paying property in Nairobi without flying home. You view by video, pay in stages, and once the unit is complete we find tenants, collect rent and keep you updated. ${c.tz}`,
+    bullets: [
+      "Live video viewings and a 3D virtual tour (Astana Residence)",
+      `Payment plan: ${"25% deposit on signing the offer letter, balance within 24 months"}`,
+      "You appoint your own advocate in Kenya to review the sale agreement and title",
+      "After handover, Comex Homes finds tenants, collects rent and manages the unit",
+    ],
+    steps: true,
+  })),
+  {
+    slug: "real-estate-investment-nairobi",
+    kind: "investor",
+    h1: "Real Estate Investment in Nairobi: Studios and 1 Bedrooms for Rental Income",
+    title: "Real Estate Investment in Nairobi: Rental Yield, Off Plan and Buy to Let | Comex Homes",
+    description: "Invest in Nairobi rental apartments with Comex Homes: studios from KES 3.51M in Ngara with about 10% expected yield, 24 month payment plan, full management and a delivered track record.",
+    keywords: ["real estate investment nairobi", "best real estate investment in nairobi", "buy to let nairobi", "rental yield nairobi apartments", "property investment kenya"],
+    projects: ["astana-residence-ngara", "balozi-suites-south-b", "the-reveal-kabarnet-road"],
+    intro: "Studios and one bedrooms are the most rented homes in Nairobi because young professionals and students want to live close to the CBD and work hubs. Comex Homes builds exactly these units in Ngara, South B and Kilimani, then manages them for owners. At Astana Residence the expected rent is KES 29,000 a month on a KES 3.51M studio, an expected gross yield of about 10%.",
+    bullets: [
+      "Expected gross yield of about 10% at Astana Residence (KES 29,000 rent on a KES 3.51M studio)",
+      "Off plan entry with 25% deposit and 24 months to pay, so capital is spread over the build",
+      "Full management: tenant sourcing, rent collection and upkeep",
+      "Delivered track record: Nyayo View Suites I fully occupied, Balozi Suites 97% occupied",
+      "Buying several units? Talk to us about a multi unit allocation in one block",
+    ],
+    calculator: true,
+  },
+  {
+    slug: "off-plan-property-investment-kenya",
+    kind: "investor",
+    h1: "Off Plan Property Investment in Kenya",
+    title: "Off Plan Apartments in Nairobi: How to Invest Safely | Comex Homes",
+    description: "How off plan apartment investment works in Nairobi: staged payments, what to check before you pay, and Comex Homes projects selling off plan now, with a delivered track record.",
+    keywords: ["off plan property investment kenya", "off plan apartments nairobi", "off plan apartments for sale nairobi payment plan"],
+    projects: ["astana-residence-ngara", "the-reveal-kabarnet-road"],
+    intro: "Buying off plan means you buy before the building is finished, usually at a lower price, and pay as construction progresses. The risk is delivery, so check the developer's finished projects first. Comex Homes has delivered Nyayo View Suites I (fully occupied) and Balozi Suites (97% occupied), and Astana Residence in Ngara is selling off plan now.",
+    bullets: [
+      "Check finished projects you can visit: Nyayo View Suites I and Balozi Suites",
+      "Ask for approvals: county building approval and NEMA licence for the project",
+      "Have your own advocate review the sale agreement and the mother title before paying",
+      "Pay into the account named in the sale agreement, never to an individual",
+      "Payment plan: 25% deposit, balance within 24 months",
+    ],
+    calculator: true,
   },
 ];
 
@@ -303,6 +364,14 @@ export const FAQS = [
   {
     q: "Does Comex Homes sell land along Mombasa Road?",
     a: "Yes. Lukenya Ridge is a gated estate of 60 plots of 50 by 100 in Lukenya, just off Mombasa Road past Athi River, about 45 minutes from Nairobi CBD.",
+  },
+  {
+    q: "Can I buy a Comex Homes apartment from abroad?",
+    a: "Yes. Kenyans in the UK, USA, UAE, Canada, Europe and Australia buy with Comex Homes through video viewings, staged bank payments and their own Kenyan advocate, and we manage the unit after handover.",
+  },
+  {
+    q: "Is a Nairobi studio a good investment?",
+    a: "At Astana Residence in Ngara, a KES 3.51M studio has expected rent of KES 29,000 a month, an expected gross yield of about 10% before costs. Use the rental yield calculator on comexhomes.ke to test your own assumptions.",
   },
   {
     q: "How do I book a site visit?",
