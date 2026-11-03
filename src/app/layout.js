@@ -10,14 +10,16 @@ import { SITE_URL, ORG, PHONE, PROJECTS, HOME_IMAGE } from "./data/seo";
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Affordable Studio and 1 Bedroom Apartments for Sale in Nairobi | Comex Homes",
+    default: "Affordable Luxury Studio and 1 Bedroom Apartments for Sale in Nairobi | Comex Homes",
     template: "%s",
   },
   description:
-    "Buy affordable executive studios and one bedroom apartments in Nairobi from KES 2.2M, direct from the developer. South B, Ngara, Kilimani and Nairobi West, 24 month payment plan and full rental management.",
+    "Affordable luxury studios and one bedroom apartments in Nairobi from KES 2.2M, with rooftop pools, gyms and residents lounges, direct from the developer. South B, Ngara, Kilimani and Nairobi West, 24 month payment plan and full rental management.",
   keywords: [
     "studio apartments for sale in nairobi",
     "1 bedroom apartment for sale in nairobi",
+    "affordable luxury apartments nairobi",
+    "luxury studio apartments nairobi",
     "affordable apartments nairobi",
     "off plan apartments nairobi",
     "apartments for sale with payment plan nairobi",
@@ -28,7 +30,7 @@ export const metadata = {
     siteName: "Comex Homes",
     locale: "en_KE",
     url: SITE_URL,
-    title: "Affordable Studio and 1 Bedroom Apartments in Nairobi | Comex Homes",
+    title: "Affordable Luxury Studio and 1 Bedroom Apartments in Nairobi | Comex Homes",
     description:
       "Executive studios and one bedrooms from KES 2.2M in South B, Ngara and Kilimani. 25% deposit, 24 months to pay, rental management included.",
     images: [{ url: HOME_IMAGE, alt: "Comex Homes apartment lounge, Nairobi" }],
@@ -106,7 +108,7 @@ export default function RootLayout({ children }) {
         <JsonLd data={websiteSchema} />
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-K7LLRMZP"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TJ32RV86"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}

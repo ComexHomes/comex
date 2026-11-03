@@ -1278,3 +1278,10 @@ span {
 .animate-zoomIn {
   animation: zoomIn 0.5s ease-out forwards;
 }
+
+/* SEO link rows in the footer: white text on the orange footer */
+.footer-links a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
