@@ -14,7 +14,7 @@ export const metadata = {
     template: "%s",
   },
   description:
-    "Affordable luxury studios and one bedroom apartments in Nairobi from KES 2.2M, with rooftop pools, gyms and residents lounges, direct from the developer. South B, Ngara, Kilimani and Nairobi West, 24 month payment plan and full rental management.",
+    "Affordable luxury studios and one bedroom apartments in Nairobi from KES 3.51M at Astana Residence, Ngara, with pool, gym and residents lounge, direct from the developer. Track record: Balozi Suites, The Reveal and Nyayo View Suites sold out. 24 month payment plan and full rental management.",
   keywords: [
     "studio apartments for sale in nairobi",
     "1 bedroom apartment for sale in nairobi",
@@ -32,7 +32,7 @@ export const metadata = {
     url: SITE_URL,
     title: "Affordable Luxury Studio and 1 Bedroom Apartments in Nairobi | Comex Homes",
     description:
-      "Executive studios and one bedrooms from KES 2.2M in South B, Ngara and Kilimani. 25% deposit, 24 months to pay, rental management included.",
+      "Studios and one bedrooms from KES 3.51M at Astana Residence, Ngara. 25% deposit, 24 months to pay, rental management included.",
     images: [{ url: HOME_IMAGE, alt: "Comex Homes apartment lounge, Nairobi" }],
   },
   twitter: { card: "summary_large_image", site: "@ComexHomes" },
@@ -59,7 +59,7 @@ const orgSchema = {
   image: `${SITE_URL}${HOME_IMAGE}`,
   description: ORG.description,
   telephone: PHONE,
-  priceRange: "KES 2,200,000 and above",
+  priceRange: "KES 3,510,000 and above",
   currenciesAccepted: "KES, USD",
   paymentAccepted: "Bank transfer",
   address: { "@type": "PostalAddress", ...ORG.address },
