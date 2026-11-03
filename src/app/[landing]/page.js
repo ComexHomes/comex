@@ -47,13 +47,13 @@ export default function Landing({ params }) {
                   "50 by 100 plots in a 60 plot gated estate, bought direct from the developer",
                   "12m and 9m internal roads, 25m road frontage and a 2,025 sqm community plot",
                   "Just off Mombasa Road, about 45 minutes from Nairobi CBD",
-                  "Developer track record: Nyayo View Suites I and II, Balozi Suites and The Reveal all sold out",
+                  "Developer track record: Balozi Suites and Nyayo View Suites I handed over and fully occupied; Nyayo View Suites II and The Reveal sold out",
                 ]
               : [
                   `Prices from ${ORG.priceFrom}, bought direct from the developer`,
-                  `Payment plan: ${ORG.paymentPlan}`,
+                  `Payment plan at Astana Residence: ${ORG.paymentPlan}`,
                   "Tenant sourcing, rent collection and management by Comex Homes",
-                  "Track record: Nyayo View Suites I and II, Balozi Suites and The Reveal all sold out",
+                  "Track record: Balozi Suites and Nyayo View Suites I handed over and fully occupied; Nyayo View Suites II and The Reveal sold out",
                 ])).map((b) => (
             <li key={b}>{b}</li>
           ))}
@@ -66,7 +66,7 @@ export default function Landing({ params }) {
               <li>Ask someone you trust to visit the site and our finished projects</li>
               <li>Your own Kenyan advocate checks the title and the sale agreement</li>
               <li>Sign the offer letter and pay the 25% deposit in USD or KES by bank transfer to the account named in the agreement</li>
-              <li>Pay the balance over up to 24 months while you get construction updates</li>
+              <li>Pay the balance in quarterly instalments during construction while you get construction updates</li>
               <li>At handover we find a tenant, collect rent and keep you updated</li>
             </ol>
             <p style={{ marginTop: 10 }}>
@@ -75,7 +75,7 @@ export default function Landing({ params }) {
             </p>
           </>
         )}
-        {l.soldOut ? <SoldOutNotice name={l.h1.split(":")[0]} /> : <CtaBar project={l.h1} />}
+        {l.soldOut ? <SoldOutNotice name={l.soldOutName || l.h1.split(":")[0]} /> : <CtaBar project={l.h1} />}
         {l.calculator && <YieldCalculator />}
         <h2 style={{ fontSize: 26, fontWeight: 700, margin: "32px 0 16px" }}>{l.kind === "land" ? "Available plots" : "Available projects"}</h2>
         <ProjectGrid slugs={l.projects} />
