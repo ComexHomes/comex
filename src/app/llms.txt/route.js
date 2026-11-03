@@ -1,5 +1,6 @@
 // Plain text summary for AI assistants (llmstxt.org), generated from the same data as the site.
 import { SITE_URL, ORG, PHONE, PROJECTS, LANDINGS, FAQS } from "../data/seo";
+import { GUIDES } from "../data/guides";
 
 export const dynamic = "force-static";
 
@@ -19,6 +20,9 @@ export function GET() {
     "",
     "## Buyer guides",
     ...LANDINGS.map((l) => `- [${l.h1}](${SITE_URL}/${l.slug}): ${l.description}`),
+    "",
+    "## Guides for diaspora buyers and investors",
+    ...GUIDES.map((g) => `- [${g.title}](${SITE_URL}/guides/${g.slug}): ${g.lead}`),
     "",
     "## FAQ",
     ...FAQS.map((f) => `- ${f.q} ${f.a}`),
