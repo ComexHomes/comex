@@ -35,6 +35,7 @@ export const ORG = {
   ],
   priceFrom: "KES 2.2M",
   paymentPlan: "25% deposit on signing the offer letter, balance payable within 24 months",
+  currencies: "Kenya shillings (KES) or US dollars (USD) by bank transfer",
 };
 
 export const PROJECTS = [
@@ -293,6 +294,7 @@ export const LANDINGS = [
     bullets: [
       "Live video viewings and a 3D virtual tour (Astana Residence)",
       `Payment plan: ${"25% deposit on signing the offer letter, balance within 24 months"}`,
+      "Pay in US dollars (USD) or Kenya shillings by bank transfer from abroad",
       "You appoint your own advocate in Kenya to review the sale agreement and title",
       "After handover, Comex Homes finds tenants, collects rent and manages the unit",
     ],
@@ -343,7 +345,7 @@ export const FAQS = [
   },
   {
     q: "Does Comex Homes offer a payment plan?",
-    a: "Yes. Pay a 25% deposit when you sign the offer letter and the balance within 24 months, with no bank mortgage needed.",
+    a: "Yes. Pay a 25% deposit when you sign the offer letter and the balance within 24 months, with no bank mortgage needed. Payments are accepted in Kenya shillings or US dollars.",
   },
   {
     q: "Where are Comex Homes apartments located?",
@@ -367,7 +369,11 @@ export const FAQS = [
   },
   {
     q: "Can I buy a Comex Homes apartment from abroad?",
-    a: "Yes. Kenyans in the UK, USA, UAE, Canada, Europe and Australia buy with Comex Homes through video viewings, staged bank payments and their own Kenyan advocate, and we manage the unit after handover.",
+    a: "Yes. Kenyans in the UK, USA, UAE, Canada, Europe and Australia buy with Comex Homes through video viewings, staged bank payments in US dollars or Kenya shillings, and their own Kenyan advocate, and we manage the unit after handover.",
+  },
+  {
+    q: "Does Comex Homes accept payment in US dollars?",
+    a: "Yes. Comex Homes accepts payment in US dollars (USD) or Kenya shillings (KES) by bank transfer into the account named in your sale agreement.",
   },
   {
     q: "Is a Nairobi studio a good investment?",

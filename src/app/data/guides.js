@@ -45,7 +45,7 @@ export const GUIDES = [
       {
         h: "5. Pay safely",
         p: [
-          "Pay by bank transfer only into the account named in the sale agreement, never to an individual's personal account or mobile number. Keep every receipt. Comex Homes offers a 25% deposit on signing the offer letter and the balance within 24 months.",
+          "Pay by bank transfer only into the account named in the sale agreement, never to an individual's personal account or mobile number. Keep every receipt. Comex Homes accepts payment in US dollars or Kenya shillings, and offers a 25% deposit on signing the offer letter and the balance within 24 months.",
         ],
       },
       {
@@ -66,6 +66,7 @@ export const GUIDES = [
     ],
     faqs: [
       { q: "Can I buy property in Kenya without travelling home?", a: "Yes. You can view by video, sign documents where your advocate directs or through a registered power of attorney, and pay by bank transfer into the account named in the sale agreement." },
+      { q: "Can I pay for Kenyan property in US dollars?", a: "Comex Homes accepts payment in US dollars or Kenya shillings by bank transfer into the account named in the sale agreement." },
       { q: "Who manages the apartment after I buy from abroad?", a: "Comex Homes finds tenants, collects rent and manages the unit on behalf of owners, including owners living abroad." },
       { q: "What is stamp duty on property in Nairobi?", a: "Stamp duty on a property transfer is 4% of the value within a municipality such as Nairobi and 2% outside municipalities. Confirm the current rate with your advocate." },
     ],
