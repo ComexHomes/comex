@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { PROJECTS, LANDINGS, SITE_URL, ORG } from "../../data/seo";
 import JsonLd from "../../components/JsonLd";
-import { Breadcrumbs, CtaBar, ProjectGrid, FaqList, faqSchema, breadcrumbSchema, wrap } from "../../components/SeoBlocks";
+import { Breadcrumbs, CtaBar, SoldOutNotice, ProjectGrid, FaqList, faqSchema, breadcrumbSchema, wrap } from "../../components/SeoBlocks";
 
 export const dynamicParams = false;
 
@@ -17,6 +17,8 @@ function projectFaqs(p) {
     { q: `What units are available at ${p.name}?`, a: p.units.map((u) => `${u.type}${u.size ? ` (${u.size})` : ""}: ${u.price}`).join(". ") + "." },
     { q: `What is the current status of ${p.name}?`, a: `${p.status}.` },
   ];
+  if (!p.available && !p.slug.includes("lukenya"))
+    f.push({ q: `Can I rent or book a short stay at ${p.name}?`, a: "Comex Homes sales (0709 501 501) handles buyers and investors only. Rentals, short stays and Airbnb enquiries are handled by Comex Living on 0709 501 500." });
   if (p.available) f.push({ q: `Is there a payment plan for ${p.name}?`, a: `Yes. ${p.paymentPlan || ORG.paymentPlan}.` });
   return f;
 }
@@ -77,7 +79,7 @@ export default function ProjectPage({ params }) {
           {p.name}, {p.area}
         </h1>
         <p style={{ fontSize: 18, marginTop: 12, maxWidth: 820 }}>{p.summary}</p>
-        <CtaBar project={p.name} />
+        {p.available ? <CtaBar project={p.name} /> : <SoldOutNotice name={p.name} />}
           <Image src={p.image} sizes="(max-width: 768px) 100vw, 1100px" alt={`${p.name}, ${p.area}`} width={1200} height={630} style={{ width: "100%", height: "auto", marginTop: 24, borderRadius: 8 }} />
         <h2 style={{ fontSize: 26, fontWeight: 700, marginTop: 28 }}>Units and prices</h2>
         <table style={{ width: "100%", borderCollapse: "collapse", marginTop: 10 }}>
