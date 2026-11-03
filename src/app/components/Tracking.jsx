@@ -10,6 +10,8 @@ const GTM_ID = "GTM-K7LLRMZP";
 const META_PIXEL = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 const TIKTOK_PIXEL = process.env.NEXT_PUBLIC_TIKTOK_PIXEL_ID;
 const LINKEDIN_ID = process.env.NEXT_PUBLIC_LINKEDIN_PARTNER_ID;
+// Set only if the GTM container does NOT already contain a GA4 tag, to avoid counting visits twice.
+const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID;
 
 export default function Tracking() {
   // Send a dataLayer event for every enquiry action so GA4 / GTM can report
@@ -29,6 +31,7 @@ export default function Tracking() {
       if (!event) return;
       window.dataLayer = window.dataLayer || [];
       if (window.fbq) window.fbq("track", event === "register_interest" ? "Lead" : "Contact", { content_name: a.dataset.project || "" });
+      if (window.gtag) window.gtag("event", event, { project: a.dataset.project || "", link_url: href });
       if (window.ttq) window.ttq.track(event === "register_interest" ? "SubmitForm" : "Contact");
       window.dataLayer.push({
         event,
@@ -53,6 +56,14 @@ export default function Tracking() {
       <Script id="metricool" strategy="lazyOnload">
         {`function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"fa199c8d48c8cf04b58c065d5c96587b"})});`}
       </Script>
+      {GA4_ID && (
+        <>
+          <Script id="ga4-src" src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`} strategy="afterInteractive" />
+          <Script id="ga4" strategy="afterInteractive">
+            {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','${GA4_ID}');`}
+          </Script>
+        </>
+      )}
       {META_PIXEL && (
         <Script id="meta-pixel" strategy="afterInteractive">
           {`!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','${META_PIXEL}');fbq('track','PageView');if(location.pathname.indexOf('/properties/')===0)fbq('track','ViewContent',{content_name:location.pathname.split('/').pop()});`}

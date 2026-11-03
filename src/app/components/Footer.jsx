@@ -44,7 +44,7 @@ function Footer() {
       </div>
 
       <nav aria-label="Apartments for sale" style={{ padding: "12px 16px", textAlign: "center", fontSize: 13, lineHeight: 1.9 }}>
-        <Link href="/properties">All properties</Link>
+        <Link href="/properties">All properties</Link> · <Link href="/guides">Guides</Link>
         {LANDINGS.map((l) => (
           <span key={l.slug}> · <Link href={`/${l.slug}`}>{l.h1}</Link></span>
         ))}
