@@ -72,6 +72,13 @@ const orgSchema = {
       telephone: PHONE,
       availableLanguage: ["English", "Swahili"],
       areaServed: ["KE", "GB", "US", "AE", "CA", "AU", "DE", "QA", "SA", "SE", "NL"],
+      description: "Buyers and investors only",
+    },
+    {
+      "@type": "ContactPoint",
+      contactType: "rentals and short stays (Comex Living)",
+      telephone: "+254709501500",
+      areaServed: "KE",
     },
   ],
   openingHoursSpecification: [
