@@ -17,7 +17,7 @@ function projectFaqs(p) {
     { q: `What units are available at ${p.name}?`, a: p.units.map((u) => `${u.type}${u.size ? ` (${u.size})` : ""}: ${u.price}`).join(". ") + "." },
     { q: `What is the current status of ${p.name}?`, a: `${p.status}.` },
   ];
-  if (p.available) f.push({ q: `Is there a payment plan for ${p.name}?`, a: `Yes. ${ORG.paymentPlan}.` });
+  if (p.available) f.push({ q: `Is there a payment plan for ${p.name}?`, a: `Yes. ${p.paymentPlan || ORG.paymentPlan}.` });
   return f;
 }
 
@@ -100,7 +100,7 @@ export default function ProjectPage({ params }) {
             ))}
           </tbody>
         </table>
-        {p.available && <p style={{ marginTop: 12 }}>Payment plan: {ORG.paymentPlan}. Comex Homes manages tenants and rent collection on your behalf.</p>}
+        {p.available && <p style={{ marginTop: 12 }}>Payment plan: {p.paymentPlan || ORG.paymentPlan}. Comex Homes manages tenants and rent collection on your behalf.</p>}
         {p.amenities.length > 0 && (
           <>
             <h2 style={{ fontSize: 26, fontWeight: 700, marginTop: 28 }}>Amenities</h2>
@@ -112,7 +112,7 @@ export default function ProjectPage({ params }) {
           </>
         )}
         <p style={{ marginTop: 20 }}>
-          Full gallery, brochure and 3D tour: <a href={p.externalUrl} target="_blank" rel="noopener">{p.externalUrl.replace("https://", "")}</a>
+          Official {p.name} website (gallery and brochure): <a href={p.externalUrl} target="_blank" rel="noopener">{p.externalUrl.replace("https://", "")}</a>
         </p>
         {related.length > 0 && (
           <p style={{ marginTop: 12 }}>
