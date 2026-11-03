@@ -6,7 +6,7 @@ import { Breadcrumbs, CtaBar, ProjectGrid, FaqList, faqSchema, breadcrumbSchema,
 export const metadata = {
   title: "All Comex Homes Properties: Studios and 1 Bedrooms in Nairobi",
   description:
-    "Every Comex Homes project in one place: Astana Residence (Ngara), The Reveal (Kabarnet Road), Balozi Suites (South B), Nyayo View Suites (Nairobi West) and Lukenya Ridge plots. Prices and status.",
+    "Every Comex Homes project: Astana Residence (Ngara) and Lukenya Ridge plots selling now; The Reveal, Balozi Suites and Nyayo View Suites I and II sold out. Prices and status.",
   alternates: { canonical: "/properties" },
 };
 
