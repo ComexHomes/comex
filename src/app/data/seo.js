@@ -66,7 +66,7 @@ export const PROJECTS = [
     name: "The Reveal",
     area: "Kilimani, Kabarnet Road",
     locationLine: "Kabarnet Road, off Ngong Road, Kilimani, Nairobi",
-    status: "Sold out, under construction and nearing completion",
+    status: "Sold out",
     available: false,
     units: [
       { type: "Studio apartment (convertible and junior studios)", price: "Sold out" },
@@ -76,7 +76,7 @@ export const PROJECTS = [
     externalUrl: "https://www.thereveal.co.ke/",
     image: revealImg.src,
     summary:
-      "The Reveal is a sold out block of studio and one bedroom apartments on Kabarnet Road off Ngong Road in Kilimani, now nearing completion, with a rooftop pool, gym and coffee shop. Buyers looking for similar units can choose Astana Residence in Ngara, selling now.",
+      "The Reveal is a sold out block of studio and one bedroom apartments on Kabarnet Road off Ngong Road in Kilimani, with a rooftop pool, gym and coffee shop. Buyers looking for similar units can choose Astana Residence in Ngara, selling now.",
   },
   {
     slug: "balozi-suites-south-b",
@@ -100,14 +100,14 @@ export const PROJECTS = [
     name: "Nyayo View Suites II",
     area: "Nairobi West",
     locationLine: "Nairobi West, near Nyayo Stadium",
-    status: "Sold out, structure complete, handover being planned",
+    status: "Sold out",
     available: false,
     units: [{ type: "Executive and premium one bedroom apartments", price: "Sold out" }],
     amenities: [],
     externalUrl: "https://www.nyayoviewsuites.co.ke/",
     image: nyayo2Img.src,
     summary:
-      "Nyayo View Suites II is a block of executive and premium one bedroom apartments in Nairobi West near Nyayo Stadium. It is sold out. The structure is complete and handover is being planned.",
+      "Nyayo View Suites II is a block of executive and premium one bedroom apartments in Nairobi West near Nyayo Stadium. It is sold out.",
   },
   {
     slug: "nyayo-view-suites-one-nairobi-west",
@@ -280,11 +280,11 @@ export const LANDINGS = [
     h1: "The Reveal, Kabarnet Road, Kilimani: Sold Out",
     title: "The Reveal, Kabarnet Road, Kilimani: Sold Out | Comex Homes",
     description:
-      "The Reveal on Kabarnet Road, Kilimani is sold out and nearing completion. Comex Homes studios and one bedrooms are selling now at Astana Residence, Ngara, from KES 3.51M with a 25% deposit.",
+      "The Reveal on Kabarnet Road, Kilimani is sold out. Comex Homes studios and one bedrooms are selling now at Astana Residence, Ngara, from KES 3.51M with a 25% deposit.",
     keywords: ["apartments for sale kabarnet road", "studio apartment for sale kilimani", "1 bedroom apartment for sale ngong road"],
     projects: ["astana-residence-ngara"],
     intro:
-      "The Reveal on Kabarnet Road off Ngong Road is sold out and nearing completion. If you were looking for a Comex Homes studio or one bedroom, Astana Residence in Ngara is selling now, minutes from the CBD.",
+      "The Reveal on Kabarnet Road off Ngong Road is sold out. If you were looking for a Comex Homes studio or one bedroom, Astana Residence in Ngara is selling now, minutes from the CBD.",
   },
   {
     slug: "apartments-for-sale-nairobi-west",
@@ -297,7 +297,7 @@ export const LANDINGS = [
     keywords: ["apartments for sale nairobi west", "studio apartments for sale in nairobi west", "nyayo view suites"],
     projects: ["astana-residence-ngara", "nyayo-view-suites-one-nairobi-west", "nyayo-view-suites-two-nairobi-west"],
     intro:
-      "Both are sold out. Nyayo View Suites I is handed over and fully occupied, and Nyayo View Suites II's structure is complete with handover being planned. If you wanted Nairobi West, the closest equivalent selling now is Astana Residence in Ngara.",
+      "Both are sold out. Nyayo View Suites I is handed over and fully occupied. If you wanted Nairobi West, the closest equivalent selling now is Astana Residence in Ngara.",
   },
   {
     slug: "apartments-for-sale-in-nairobi-under-4-million",
@@ -373,7 +373,7 @@ export const LANDINGS = [
     description: "How off plan apartment investment works in Nairobi: staged payments, what to check before you pay, and Astana Residence, the Comex Homes project selling off plan now.",
     keywords: ["off plan property investment kenya", "off plan apartments nairobi", "off plan apartments for sale nairobi payment plan"],
     projects: ["astana-residence-ngara"],
-    intro: "Buying off plan means you buy before the building is finished, usually at a lower price, and pay as construction progresses. The risk is delivery, so check the developer's finished projects first. Comex Homes has handed over Nyayo View Suites I and Balozi Suites, both fully occupied. Nyayo View Suites II (structure complete, handover being planned) and The Reveal (nearing completion) are sold out. The only Comex Homes apartment project selling now is Astana Residence in Ngara, off plan.",
+    intro: "Buying off plan means you buy before the building is finished, usually at a lower price, and pay as construction progresses. The risk is delivery, so check the developer's finished projects first. Comex Homes has handed over Nyayo View Suites I and Balozi Suites, both fully occupied. Nyayo View Suites II and The Reveal are sold out. The only Comex Homes apartment project selling now is Astana Residence in Ngara, off plan.",
     bullets: [
       "Check finished projects you can visit: Nyayo View Suites I and Balozi Suites, both handed over and fully occupied",
       "Ask for approvals: county building approval and NEMA licence for the project",
@@ -408,7 +408,7 @@ export const FAQS = [
   },
   {
     q: "Has Comex Homes delivered projects before?",
-    a: "Yes. Nyayo View Suites I and Balozi Suites are handed over and fully occupied. Nyayo View Suites II is sold out, its structure is complete and handover is being planned. The Reveal is sold out and nearing completion.",
+    a: "Yes. Nyayo View Suites I and Balozi Suites are handed over and fully occupied. Nyayo View Suites II and The Reveal are sold out.",
   },
   {
     q: "Does Comex Homes sell land along Mombasa Road?",
