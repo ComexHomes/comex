@@ -4,7 +4,7 @@
 import Script from "next/script";
 import { useEffect } from "react";
 
-const GTM_ID = "GTM-K7LLRMZP";
+const GTM_ID = "GTM-TJ32RV86";
 // Retargeting pixels so site visitors keep seeing Comex Homes on Facebook,
 // Instagram, TikTok and LinkedIn. Set these in Vercel > Settings > Environment Variables.
 const META_PIXEL = process.env.NEXT_PUBLIC_META_PIXEL_ID;

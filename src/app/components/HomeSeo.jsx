@@ -10,7 +10,7 @@ export default function HomeSeo() {
     <>
       <JsonLd data={faqSchema()} />
       <section style={wrap}>
-        <h2 style={{ fontSize: 28, fontWeight: 800 }}>Affordable studios and 1 bedroom apartments in Nairobi</h2>
+        <h2 style={{ fontSize: 28, fontWeight: 800 }}>Affordable luxury studios and 1 bedroom apartments in Nairobi</h2>
         <p style={{ marginTop: 10, fontSize: 17, maxWidth: 860 }}>
           {ORG.description} Units start from {ORG.priceFrom}, with {ORG.paymentPlan.toLowerCase()}.
         </p>

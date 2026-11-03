@@ -15,7 +15,7 @@ const GTM = () => (
             j.async=true;
             j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
             f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-K7LLRMZP');
+          })(window,document,'script','dataLayer','GTM-TJ32RV86');
         `,
       }}
     ></script>
@@ -23,7 +23,7 @@ const GTM = () => (
     {/* Google Tag Manager (noscript) */}
     <noscript>
       <iframe
-        src={`https://www.googletagmanager.com/ns.html?id=GTM-K7LLRMZP`}
+        src={`https://www.googletagmanager.com/ns.html?id=GTM-TJ32RV86`}
         height="0"
         width="0"
         style={{ display: "none", visibility: "hidden" }}
