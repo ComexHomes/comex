@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import Logo from "../../../assets/logo.png";
+import Link from "next/link";
+import { LANDINGS, ORG } from "../data/seo";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -19,7 +21,7 @@ function Footer() {
               src={Logo}
               className="footer-image"
               priority="true"
-              alt="the reveal logo"
+              alt="Comex Homes logo"
             />
           </div>
 
@@ -36,11 +38,22 @@ function Footer() {
         </div>
         <div className="right-area-side">
           <h3>comex homes</h3>
-          <p>Hurligham Telkom Plaza. 1st Floor.</p>
+          <p>Telkom Plaza, 1st Floor, Hurlingham, Nairobi</p>
           <p>Phone : +254709501501</p>
         </div>
       </div>
 
+      <nav aria-label="Apartments for sale" style={{ padding: "12px 16px", textAlign: "center", fontSize: 13, lineHeight: 1.9 }}>
+        <Link href="/properties">All properties</Link>
+        {LANDINGS.map((l) => (
+          <span key={l.slug}> · <Link href={`/${l.slug}`}>{l.h1}</Link></span>
+        ))}
+      </nav>
+      <nav aria-label="Follow Comex Homes" style={{ padding: "4px 16px 12px", textAlign: "center", fontSize: 14 }}>
+        {ORG.sameAs.map((u, i) => (
+          <span key={u}>{i > 0 && " · "}<a href={u} target="_blank" rel="noopener me" data-track="social_click">{u.includes("facebook") ? "Facebook" : u.includes("instagram") ? "Instagram" : u.includes("x.com") ? "X" : "LinkedIn"}</a></span>
+        ))}
+      </nav>
       <div className="bottom">
         <p>Comex Homes &copy; {new Date().getFullYear()}</p>
       </div>

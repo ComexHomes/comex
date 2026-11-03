@@ -26,7 +26,7 @@ function Getproperty() {
         starting from 2.2M.
       </p>
 
-      <h2 className="properties-heading">9% - 15% GUARANTEED</h2>
+      <h2 className="properties-heading">PROJECTED 9% - 15% ANNUAL RETURNS</h2>
 
       <div className="schedule-meet">
         <div className="texmex">

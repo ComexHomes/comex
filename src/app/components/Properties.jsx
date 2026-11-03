@@ -21,6 +21,7 @@ export default function Properties() {
     {
       id: 0,
       title: "Lukenya Ridge",
+      slug: "lukenya-ridge-plots",
       image: lukenyaridge,
       location: "Lukenya, Mombasa Road",
       availablesuits: "Premium 50 x 100 Plots",
@@ -30,6 +31,7 @@ export default function Properties() {
     {
       id: 1,
       title: "Astana Residence",
+      slug: "astana-residence-ngara",
       image: astanaresidence,
       location: "Ngara, Nairobi",
       availablesuits: "Studios, 1 Bedroom Apartments",
@@ -39,6 +41,7 @@ export default function Properties() {
     {
       id: 2,
       title: "The Reveal",
+      slug: "the-reveal-kabarnet-road",
       image: reveal,
       location: "Kabarnet Road",
       availablesuits: "Studio, 1 Bedroom Apartments",
@@ -48,6 +51,7 @@ export default function Properties() {
     {
       id: 3,
       title: "Balozi Suites",
+      slug: "balozi-suites-south-b",
       image: balozi,
       location: "South B",
       availablesuits: "Executive Studios and One Bedrooms",
@@ -57,6 +61,7 @@ export default function Properties() {
     {
       id: 4,
       title: "Nyayo View Suites One",
+      slug: "nyayo-view-suites-one-nairobi-west",
       image: nyayoone,
       location: "Nairobi West",
       availablesuits: "Executive Studios and 1 Bedrooms",
@@ -66,6 +71,7 @@ export default function Properties() {
     {
       id: 5,
       title: "Nyayo View Suites Two",
+      slug: "nyayo-view-suites-two-nairobi-west",
       image: nyayotwo,
       location: "Nairobi West",
       availablesuits: "Executive & Premium One Bedrooms",

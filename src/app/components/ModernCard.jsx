@@ -11,17 +11,20 @@ export default function ModernCard({
   availablesuits,
   link,
   units,
+  slug,
 }) {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-105">
       {/* Image Section */}
       <div className="relative h-48 w-full">
-        <Image src={image} alt={title} fill className="object-cover" />
+        <Image src={image} alt={`${title}, ${location}`} fill className="object-cover" />
       </div>
 
       {/* Text Content */}
       <div className="p-4">
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
+        <h3 className="text-xl font-semibold mb-2">
+          {slug ? <Link href={`/properties/${slug}`}>{title}</Link> : title}
+        </h3>
 
         {/* Ratings */}
         <div className="flex text-yellow-400 mb-2">
