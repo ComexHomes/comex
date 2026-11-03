@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import {
@@ -11,7 +11,6 @@ import Link from "next/link";
 import { FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
 import { ImFacebook } from "react-icons/im";
-import Result from "./Result";
 import Banner from "../../../assets/balozififteen.jpg";
 import Logo from "../../../assets/logo.png";
 
@@ -20,32 +19,7 @@ function Contactus() {
     AOS.init({ duration: 1500 });
   });
 
-  // const form = useRef();
-  const [result, setResult] = useState(false);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_prk4agt",
-        "template_92qp9di",
-        e.target,
-        "wyL9szuhcFXTO7PpM4yk0"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-
-    e.target.reset();
-
-    setResult(true);
-  };
   return (
     <div data-aos="fade-up" className="contact-area">
       <div className="contact-form-area">
@@ -53,46 +27,15 @@ function Contactus() {
           <h2 className="sec-title">contact - us</h2>
         </div>
 
-        <form className="contact-form" onSubmit={sendEmail}>
-          <div className="top-form">
-            <div className="input-carrier">
-              <label htmlFor="first name">First Name</label>
-              <input type="text" name="firstName" required />
-            </div>
-
-            <div className="input-carrier">
-              <label htmlFor="last name">Last Name</label>
-              <input type="text" name="secondName" required />
-            </div>
-
-            <div className="input-carrier">
-              <label htmlFor="email">Email</label>
-              <input type="email" name="email" required />
-            </div>
-
-            <div className="input-carrier">
-              <label htmlFor="phone number">Phone Number</label>
-              <input type="tel" name="phone" required />
-            </div>
-          </div>
-
-          <div className="input-carrier">
-            <label htmlFor="subject">Subject</label>
-            <input type="text" name="subject" required />
-          </div>
-
-          <div className="input-carrier">
-            <label htmlFor="message">Message</label>
-
-            <textarea className="message" name="message"></textarea>
-          </div>
-
-          <div className="btn-area">
-            <button className="btn-light">submit</button>
-          </div>
-
-          <div className="result">{result ? <Result /> : null}</div>
-        </form>
+        <div style={{ width: "100%" }}>
+          {/* Website Enquiry form in Zoho Forms (info@comexhomes.ke). Every submission is emailed to info@comexhomes.ke. */}
+          <iframe
+            title="Website Enquiry"
+            aria-label="Website Enquiry"
+            src="https://forms.zohopublic.com/balozi/form/WebsiteEnquiry/formperma/lMJLwfCsL2F8murEt4IYFdRYU6FWs7a6Xe9Ai3gVfw8?Website=https%3A%2F%2Fwww.comexhomes.ke"
+            style={{ width: "100%", height: "900px", border: "none", background: "#fff", borderRadius: 8 }}
+          />
+        </div>
 
         <div className="more-text">
           <p style={{ fontSize: "20px", color: "#fff" }}>
