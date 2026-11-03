@@ -43,17 +43,17 @@ function Footer() {
         </div>
       </div>
 
-      <nav aria-label="Apartments for sale" style={{ padding: "12px 16px", textAlign: "center", fontSize: 13, lineHeight: 1.9 }}>
+      <div role="navigation" aria-label="Apartments for sale" className="footer-links" style={{ padding: "12px 16px", textAlign: "center", fontSize: 13, lineHeight: 1.9, color: "#fff" }}>
         <Link href="/properties">All properties</Link> · <Link href="/guides">Guides</Link>
         {LANDINGS.map((l) => (
           <span key={l.slug}> · <Link href={`/${l.slug}`}>{l.h1}</Link></span>
         ))}
-      </nav>
-      <nav aria-label="Follow Comex Homes" style={{ padding: "4px 16px 12px", textAlign: "center", fontSize: 14 }}>
+      </div>
+      <div role="navigation" aria-label="Follow Comex Homes" className="footer-links" style={{ padding: "4px 16px 12px", textAlign: "center", fontSize: 14, color: "#fff" }}>
         {ORG.sameAs.map((u, i) => (
           <span key={u}>{i > 0 && " · "}<a href={u} target="_blank" rel="noopener me" data-track="social_click">{u.includes("facebook") ? "Facebook" : u.includes("instagram") ? "Instagram" : u.includes("x.com") ? "X" : "LinkedIn"}</a></span>
         ))}
-      </nav>
+      </div>
       <div className="bottom">
         <p>Comex Homes &copy; {new Date().getFullYear()}</p>
       </div>

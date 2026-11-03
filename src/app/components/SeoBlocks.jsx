@@ -17,14 +17,14 @@ const btn = {
 
 export function Breadcrumbs({ items }) {
   return (
-    <nav aria-label="Breadcrumb" style={{ ...wrap, paddingTop: 120, paddingBottom: 0, fontSize: 14, color: "#555" }}>
+    <div role="navigation" aria-label="Breadcrumb" style={{ ...wrap, paddingTop: 120, paddingBottom: 0, fontSize: 14, color: "#555" }}>
       {items.map((it, i) => (
         <span key={it.href}>
           {i > 0 && " / "}
           {i < items.length - 1 ? <Link href={it.href}>{it.name}</Link> : <span>{it.name}</span>}
         </span>
       ))}
-    </nav>
+    </div>
   );
 }
 
