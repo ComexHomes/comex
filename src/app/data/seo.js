@@ -14,6 +14,10 @@ export const HOME_IMAGE = homeImg.src;
 export const SITE_URL = "https://www.comexhomes.ke";
 export const PHONE = "+254709501501";
 export const WHATSAPP = "https://wa.me/254709501501";
+// Rentals, short stays and Airbnb enquiries for completed Comex buildings go to Comex Living,
+// so the sales line 0709 501 501 stays for buyers and investors.
+export const LIVING_PHONE = "+254709501500";
+export const LIVING_PHONE_DISPLAY = "0709 501 500";
 export const REGISTER_URL = "https://zfrmz.com/63qeS4QHxcWIQdgr1NB3";
 
 export const ORG = {
@@ -250,6 +254,7 @@ export const LANDINGS = [
   },
   {
     slug: "apartments-for-sale-south-b",
+    soldOut: true,
     h1: "Balozi Suites, South B: Sold Out",
     title: "Apartments in South B: Balozi Suites Sold Out, Astana Selling Now | Comex Homes",
     description:
@@ -272,6 +277,7 @@ export const LANDINGS = [
   },
   {
     slug: "apartments-for-sale-kilimani-kabarnet-road",
+    soldOut: true,
     h1: "The Reveal, Kabarnet Road, Kilimani: Sold Out",
     title: "The Reveal, Kabarnet Road, Kilimani: Sold Out | Comex Homes",
     description:
@@ -283,6 +289,7 @@ export const LANDINGS = [
   },
   {
     slug: "apartments-for-sale-nairobi-west",
+    soldOut: true,
     h1: "Apartments in Nairobi West by Comex Homes",
     title: "Apartments for Sale in Nairobi West | Nyayo View Suites | Comex Homes",
     description:
@@ -418,6 +425,10 @@ export const FAQS = [
   {
     q: "Is a Nairobi studio a good investment?",
     a: "At Astana Residence in Ngara, a KES 3.51M studio has expected rent of KES 29,000 a month, an expected gross yield of about 10% before costs. Use the rental yield calculator on comexhomes.ke to test your own assumptions.",
+  },
+  {
+    q: "Can I rent or book a short stay at Balozi Suites or Nyayo View Suites?",
+    a: "Comex Homes sales (0709 501 501) only handles buyers and investors. Rentals, short stays and Airbnb enquiries at completed Comex buildings are handled by Comex Living on 0709 501 500.",
   },
   {
     q: "How do I book a site visit?",
