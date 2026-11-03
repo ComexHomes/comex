@@ -37,7 +37,7 @@ function Whycomex() {
     <div data-aos="fade-up">
       <section className="why-comex">
         <div className="head">
-          <h1>Why Comex Homes</h1>
+          <h2 className="sec-title">Why Comex Homes</h2>
           {/* <hr className="center-line" /> */}
           <h2>Reasons To Invest In Real Estate With Us</h2>
         </div>

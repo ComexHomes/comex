@@ -50,7 +50,7 @@ function Contactus() {
     <div data-aos="fade-up" className="contact-area">
       <div className="contact-form-area">
         <div className="contact-form-heading">
-          <h1>contact - us</h1>
+          <h2 className="sec-title">contact - us</h2>
         </div>
 
         <form className="contact-form" onSubmit={sendEmail}>

@@ -16,7 +16,7 @@ function Homebanner() {
       <Image priority='true' className="banner-image" src={banner} alt='banner'/>
 
       <div className="text">
-        <h1>Comex Homes</h1>
+        <h2 className="sec-title">Comex Homes</h2>
         <h3>Hurligham Telkom Plaza. 1st Floor.</h3>
       </div>
     </div>
