@@ -47,13 +47,13 @@ export default function Landing({ params }) {
                   "50 by 100 plots in a 60 plot gated estate, bought direct from the developer",
                   "12m and 9m internal roads, 25m road frontage and a 2,025 sqm community plot",
                   "Just off Mombasa Road, about 45 minutes from Nairobi CBD",
-                  "Developer track record: Nyayo View Suites I fully occupied, Balozi Suites 97% occupied",
+                  "Developer track record: Nyayo View Suites I and II, Balozi Suites and The Reveal all sold out",
                 ]
               : [
                   `Prices from ${ORG.priceFrom}, bought direct from the developer`,
                   `Payment plan: ${ORG.paymentPlan}`,
                   "Tenant sourcing, rent collection and management by Comex Homes",
-                  "Track record: Nyayo View Suites I fully occupied, Balozi Suites 97% occupied",
+                  "Track record: Nyayo View Suites I and II, Balozi Suites and The Reveal all sold out",
                 ])).map((b) => (
             <li key={b}>{b}</li>
           ))}
