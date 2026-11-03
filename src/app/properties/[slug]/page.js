@@ -25,7 +25,7 @@ export function generateMetadata({ params }) {
   const p = PROJECTS.find((x) => x.slug === params.slug);
   if (!p) return {};
   const kind = p.slug.includes("lukenya") ? "Plots for Sale" : "Studio and 1 Bedroom Apartments";
-  const title = `${p.name}, ${p.area}: ${kind} | Comex Homes`;
+  const title = p.available ? `${p.name}, ${p.area}: ${kind} | Comex Homes` : `${p.name}, ${p.area}: Sold Out | Comex Homes`;
   return {
     title,
     description: p.summary.slice(0, 160),
