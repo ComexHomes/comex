@@ -2,7 +2,7 @@ import Image from "next/image";
 // Server rendered building blocks for SEO pages. No client JS, so Google and
 // AI crawlers read every word on first load.
 import Link from "next/link";
-import { PHONE, WHATSAPP, REGISTER_URL, PROJECTS, FAQS } from "../data/seo";
+import { PHONE, WHATSAPP, REGISTER_URL, PROJECTS, FAQS, LIVING_PHONE, LIVING_PHONE_DISPLAY } from "../data/seo";
 
 const wrap = { maxWidth: 1100, margin: "0 auto", padding: "32px 16px" };
 const btn = {
@@ -40,6 +40,32 @@ export function CtaBar({ project = "" }) {
       <a href={`tel:${PHONE}`} data-track="call_click" data-project={project} style={{ ...btn, border: "2px solid #222", color: "#222" }}>
         Call {PHONE}
       </a>
+    </div>
+  );
+}
+
+// Shown on sold-out buildings: turns rental and Airbnb traffic away from the sales
+// line and turns buyers towards what is selling now.
+export function SoldOutNotice({ name }) {
+  return (
+    <div style={{ border: "2px solid #f8a428", borderRadius: 10, padding: 16, background: "#fff7ea", marginTop: 16, maxWidth: 860 }}>
+      <p style={{ fontWeight: 700 }}>{name} is sold out. No units are for sale here.</p>
+      <p style={{ marginTop: 6 }}>
+        Looking to rent or book a short stay? Comex Homes sales does not handle rentals or Airbnb bookings. Contact{" "}
+        <a href={`tel:${LIVING_PHONE}`} data-track="rental_redirect" style={{ fontWeight: 600 }}>Comex Living on {LIVING_PHONE_DISPLAY}</a>.
+      </p>
+      <p style={{ marginTop: 6 }}>Want to own a unit like this? These are selling now:</p>
+      <div>
+        <a href="/properties/astana-residence-ngara" style={{ display: "inline-block", padding: "12px 20px", borderRadius: 6, fontWeight: 600, marginRight: 10, marginTop: 10, background: "#f8a428", color: "#fff" }}>
+          Astana Residence, Ngara: studios from KES 3.51M
+        </a>
+        <a href="/properties/lukenya-ridge-plots" style={{ display: "inline-block", padding: "12px 20px", borderRadius: 6, fontWeight: 600, marginRight: 10, marginTop: 10, border: "2px solid #222", color: "#222" }}>
+          Lukenya Ridge plots, Mombasa Road
+        </a>
+        <a href={`${WHATSAPP}?text=${encodeURIComponent("Hi Comex Homes, I want to BUY a unit or plot. Please share what is available.")}`} target="_blank" rel="noopener" data-track="whatsapp_click" style={{ display: "inline-block", padding: "12px 20px", borderRadius: 6, fontWeight: 600, marginTop: 10, background: "#25D366", color: "#fff" }}>
+          WhatsApp sales (buyers only)
+        </a>
+      </div>
     </div>
   );
 }

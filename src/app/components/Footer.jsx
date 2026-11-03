@@ -39,7 +39,8 @@ function Footer() {
         <div className="right-area-side">
           <h3>comex homes</h3>
           <p>Telkom Plaza, 1st Floor, Hurlingham, Nairobi</p>
-          <p>Phone : +254709501501</p>
+          <p>Sales and investment: +254 709 501 501</p>
+          <p>Rentals and short stays: Comex Living +254 709 501 500</p>
         </div>
       </div>
 
