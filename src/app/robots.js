@@ -5,7 +5,7 @@ import { SITE_URL } from "./data/seo";
 export default function robots() {
   const ai = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User", "Google-Extended", "Bingbot", "Applebot-Extended", "CCBot", "meta-externalagent"];
   return {
-    rules: [{ userAgent: "*", allow: "/" }, ...ai.map((ua) => ({ userAgent: ua, allow: "/" }))],
+    rules: [{ userAgent: "*", allow: "/", disallow: "/admin" }, ...ai.map((ua) => ({ userAgent: ua, allow: "/", disallow: "/admin" }))],
     sitemap: `${SITE_URL}/sitemap.xml`,
     host: SITE_URL,
   };
