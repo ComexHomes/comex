@@ -4,6 +4,7 @@ import "./globals.css";
 import WhatsAppButton from "./components/WhatsAppButton";
 import Tracking from "./components/Tracking";
 import JsonLd from "./components/JsonLd";
+import PublicOnly from "./components/PublicOnly";
 import { Analytics } from "@vercel/analytics/react";
 import { SITE_URL, ORG, PHONE, PROJECTS, HOME_IMAGE } from "./data/seo";
 
@@ -113,20 +114,24 @@ export default function RootLayout({ children }) {
       <body>
         <JsonLd data={orgSchema} />
         <JsonLd data={websiteSchema} />
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-TJ32RV86"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
-        <Navbar />
+        <PublicOnly>
+          <noscript>
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-TJ32RV86"
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            ></iframe>
+          </noscript>
+        </PublicOnly>
+        <PublicOnly><Navbar /></PublicOnly>
         {children}
-        <WhatsAppButton />
-        <Footer />
-        <Tracking />
-        <Analytics />
+        <PublicOnly>
+          <WhatsAppButton />
+          <Footer />
+          <Tracking />
+          <Analytics />
+        </PublicOnly>
       </body>
     </html>
   );
