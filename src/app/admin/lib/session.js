@@ -4,7 +4,9 @@
 // Set these in Vercel > Settings > Environment Variables (mark them Sensitive):
 //   ADMIN_EMAIL            the email used to log in
 //   ADMIN_PASSWORD         a strong password, 16 characters or more
-//   ADMIN_SESSION_SECRET   a random string, 32 characters or more
+// Sessions are signed with the Google service account key that the dashboard
+// already needs (GOOGLE_SERVICE_ACCOUNT_JSON), so there is no extra secret to
+// create. ADMIN_SESSION_SECRET (32 characters or more) overrides it if set.
 export const COOKIE = "comex_admin";
 export const MAX_AGE = 60 * 60 * 12; // 12 hours, then log in again
 
@@ -14,11 +16,11 @@ const hex = (buf) => Array.from(new Uint8Array(buf)).map((b) => b.toString(16).p
 export function adminConfig() {
   const email = (process.env.ADMIN_EMAIL || "").trim().toLowerCase();
   const password = process.env.ADMIN_PASSWORD || "";
-  const secret = process.env.ADMIN_SESSION_SECRET || "";
+  const secret = process.env.ADMIN_SESSION_SECRET || process.env.GOOGLE_SERVICE_ACCOUNT_JSON || "";
   const missing = [];
   if (!email) missing.push("ADMIN_EMAIL");
   if (password.length < 12) missing.push("ADMIN_PASSWORD");
-  if (secret.length < 32) missing.push("ADMIN_SESSION_SECRET");
+  if (secret.length < 32) missing.push("GOOGLE_SERVICE_ACCOUNT_JSON");
   return { email, password, secret, missing, ready: missing.length === 0 };
 }
 
